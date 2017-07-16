@@ -1,0 +1,194 @@
+ - position: Data Scientist
+   type: technical
+   role: To build analyses and features such as data-filtering, reviewer experience estimation, flaw classification, and quality prediction directly into our applications. You will use data science to build knowledge gain and actionable insight; the tools you build will help artisan producers make better, more consistent products.
+   tasks:
+   - To build analyses and features such as data-filtering, reviewer experience estimation, flaw classification, and quality prediction directly into our applications. You will use data science to build knowledge gain and actionable insight; the tools you build will help artisan producers make better, more consistent products.
+   - Implement a variety of techniques from simple outlier detection to customized, high-dimensional distance metrics, infinite dimensional linear transformations, and topological homology
+   - Check out our <a href="/learn">whitepapers</a> so that you can get a preview of what the Data Team is working on.
+   requirements:
+   - Background in math, physics, computer science, computational biology, bio-informatics, or a similar field
+   - Knowledge of basic statistics
+   - Knowledge of general data science techniques
+   - Programming experience
+   - Strong writing and communication skills
+   bonuses:
+   - Worked on a data science team or research group
+   - Open-sourced data science projects or published research
+   - High-scoring Kagel competition entries
+   - In-depth knowledge of R Programming Language
+   - Work with other programming languages (particularly C and C++)
+   - Basic knowledge of databases
+   - Use of optimization techniques for numerical methods
+   curator_first_name: jason
+
+ - position: Mobile Developer
+   type: technical
+   role: As a member of the Gastrograph Review Mobile Application Team, you will work closely with the Android and iOS teams to maintain a consistent vision accross platforms. All of our current Android and iOS developers have designed and maintained our entire codebase, so they will help you rapidly get up to speed. We are looking for more mobile developers who are true hackers, but more importantly software developers, and who can quickly iterate on features and bug fixes to continually improve our apps and meet our customers’ demands.
+   tasks:
+   - Designing and implementing new features
+   - Refactoring and optimizing existing code for performance and maintainability
+   - Tracking and fixing bugs
+   - Sharing a codebase under version control with at least three other developers
+   requirements:
+   - 1+ published apps (either Play Store or App Store)
+   - Strong understanding of the Android or iOS framework and SDK
+   - Has worked on a team of 3+ developers
+   - Working knowledge of SQLite
+   - Communicates well within groups
+   bonuses:
+   - Android developer with iOS experience (and vice versa)
+   - Experience with testing frameworks for either platform
+   - Experience working with DynamoDB and the AWS stack
+   - Experience maintaining a codebase for 1+ years
+   - Easygoing
+   - Active in the open source community
+   curator_first_name: john
+
+ - position: Front-end Developer
+   type: technical
+   role: We are looking for a hands-on and agile front-end developer. You will be rapidly implementing user-facing applications and interfaces to our website.
+   tasks:
+   - Provide feedback for anything visual we produce
+   - Be opinionated in your design preferences by proposing innovative design solutions while arguing for or against others
+   - Build new customer-facing interfaces into the Gastrograph website
+   - Redesign features based on customer feedback
+   - Re-engineer and optimize front-end code for performance and scale
+   - Track and fix bugs
+   requirements:
+   - Excellent knowledge of HTML (5), CSS (LESS), and JavaScript
+   - Excellent responsive design knowledge
+   - Excellent design skills and an eye for details
+   - Experience with version control (we use git)
+   - Excellent communication skills
+   - A willingness to work hard
+   bonuses:
+   - Experience using Twitter Bootstrap
+   - Better&#58; break us away from Bootstrap
+   - Experience using Gulp (Grunt is fine) and Jekyll
+   - Experience user and A/B testing
+   - Understanding of browser differences and quirks
+   - A software design or computer-science background
+   curator_first_name: john
+
+ - position: Marketing and Growth Engineer
+   type: technical
+   role: You will be responsible for our customer acquisition strategy and client targeting. Through knowledge of the craft industry, you will help optimize how to sell our software to producers.
+   tasks:
+   - Working closely with the Web team to optimize our website through A/B testing
+   - Integrating client feedback
+   - Creating multi-channel campaigns across email, SEM, retargeting, and industry publications (yes, we actually advertise outside the confines of the internet IRL!).
+   - Monitoring usability
+   - Market trend research
+   requirements:
+   - Experience with customer acquisition
+   - Strong understanding of social communications
+   - Experience with click tracking, A/B Testing, and performance metrics
+   - Growth-hacking mentality with an emphasis on hypothesis testing
+   - Programming experience in HTML, CSS, and JavaScript
+   bonuses:
+   - Experience leading and building a marketing team
+   - Experience with marketing and customer acquistion for B2B SaaS
+   - Experience working in a startup
+   - Experience marketing for a coffee roasters, beer brewers, or craft distillers
+   curator_first_name: jason
+
+
+ - position: Marketing Response Representative
+   type: sales
+   role: Our marketing response reps work closely with both our marketing and sales teams to respond and qualify inbound leads from our various marketing channels. You will be the initial point of contact with potential inbound clients and help them understand our range of flavor profiling and quality control tools. Qualified inbound leads are passed off to our sales team.
+   tasks:
+   - Qualifying inbound leads before seamlessly passing to account manager.
+   - Monitoring inbound channels for changes in behavior (lead quality, lead flow, & verticals).
+   - Strategize with top-producing account managers.
+   - Map prospective accounts around organisational structure, people and existing technology.
+   - Leverage CRM tools to prospect into specific geographic territories and sectors&#8212;keep the sales engine turning!
+   - Give feedback to the marketing team on inbound leads.
+   requirements:
+   - Experience and training in sales or marketing
+   - You are a personable and self-driven person
+   - You enjoy craft and artisan products!
+   bonuses:
+   - Experience in social media
+   - Experience in lead generation
+   - Worked for a brewery, distillery, or coffee roastery
+   curator_first_name: jason
+
+ - position: Account Manager
+   type: sales
+   role: Help our potential clients craft the right plan, at the right price, for their vertical and size&#8212;by closing the deal. As our first Account Manager, you will be responsible for building and supporting the sales engine and pipeline.  You and your team will be responsible for executing sales into potential leads and finding opportunities to grow existing accounts. Our sales team only handles verified potential leads&#8212;no inbound or outbound prospecting on our sales team!
+   tasks:
+   - Inside phone and email sales
+   - Engage executives in targeted prospect accounts
+   - Orchestrate discussions with senior execs around their business needs
+   - Writing proposals and technical implementation docs
+   - Closing the deal
+   requirements:
+   - Experience and training in sales
+   - You are a personable and self-driven person
+   - You enjoy the grind and can take the "no"s
+   bonuses:
+   - Experience in proposal writing
+   - Experience in up-selling current accounts
+   - Worked for a brewery, distillery, or coffee roastery
+   curator_first_name: jason
+
+ - position: Customer Success Manager
+   type: sales
+   role: Our customer success managers are responsible for maintaining and furthering our relationship with our clients through technical expertise, implementation support, and concierge onboarding (professional services). Customer success managers help our current clients better understand, implement, and use our range of flavor profiling and quality control tools&#8212;and cross sell and upsell clients tools they can use to improve their products flavor profile and quality. Customer success managers are expected to support the sales and marketing teams through public presentations at trade shows and industry events, and through written case studies.
+   tasks:
+   - Helping our current clients implement and use our quality control and flavor profiling tools.
+   - Orchestrate discussions with senior execs around their business needs.
+   - Cross selling and upselling current clients the tools they need to succeed.
+   - Preparing written or oral presentations.
+   requirements:
+   - Public speaking and presentation skills.
+   - In-depth knowledge of at least one of the following&#58 data science, chemistry, sensory science, and/or craft beverage production (beer brewing, wine making, distilling, or coffee roasting)
+   - An undying love for helping producers improve the quality and consistency of their products.
+   bonuses:
+   - Experience in account management, including upselling and cross-selling
+   - Worked for a brewery, distillery, or coffee roastery
+   curator_first_name: jason
+
+ - position: New Business Development Representative
+   type: sales
+   role: New business development reps are responsible for adding cold accounts to our sales pipeline by helping potential clients understand how they can implement and use our range of flavor profiling and quality control tools. You will work on a team that creates & qualifies new sales opportunities by focusing on mutual business fit, research, and consultative discussion, to create highly relevant sales opporunities for the sales team.
+   tasks:
+   - Sourcing and qualifying cold leads before seamlessly passing to account manager.
+   - Finding new and exciting verticals for our current product offerings.
+   - Identifying gaps in our resources (whitepapers, tutorials, blog posts, case studies, etc.) which leave client questions unanswered.
+   - Strategize with top-producing account managers.
+   - Map prospective accounts around organisational structure, people and existing technology.
+   - Engage executives in targeted prospect accounts.
+   - Orchestrate discussions with senior execs around their business needs.
+   - Leverage CRM tools to prospect into specific geographic territories and sectors&#8212;keep the sales engine turning!
+   requirements:
+   - Experience and training in sales
+   - You are a personable and self-driven person
+   - You enjoy craft and artisan products
+   bonuses:
+   - Experience in social media
+   - Experience in lead generation
+   - Worked for a brewery, distillery, or coffee roastery
+   curator_first_name: jason
+
+ - position: Sales and Marketing Intern
+   type: intern
+   role: You will be responsible for supporting the Head of Sales in our customer acquisition strategy and client targeting. Through knowledge of the craft industry, you will help optimize our sales strategy and marketing tactics
+   tasks:
+   - Work closely with the Head of Sales to optimize our website through A/B testing
+   - Manage the Gastrograph social media campaign
+   - Write, edit, and post to the company blog
+   - Gather industry research
+   - Create multi-channel campaigns across email, SEM, retargeting, and industry publications
+   - Research market trends
+   requirements:
+   - Strong understanding of social communications
+   - Ability to work both independently and as a part of a team
+   - Knowledge of current marketing trends
+   - Strong written and communication skills
+   bonuses:
+   - Craft beer, coffee and spirits consumer
+   - Experience with marketing and customer acquisition for B2B SaaS
+   - Experience marketing for coffee roasters, beer brewers, or craft distillers
+   curator_first_name: jason
+

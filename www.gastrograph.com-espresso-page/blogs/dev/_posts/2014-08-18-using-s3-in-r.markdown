@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "Using S3 buckets in R with RS3 library"
+tags: S3 aws rS3 r storage csv
+date:   2014-08-18 12:30:02
+author:
+  - Evan Farrell
+description: Using the RS3 library, you can use AWS S3 buckets with R.
+---
+In the past there hasn't been a good location for storing flat files as an R developer. If you only run a program on your local machine, storing it there isn't a big problem. Once you start needing backups and access from multiple locations, sending the updated file via email isn't easy and worth it. You can run your own FTP server to solve this problem, but then you run higher running costs, the need for maintenance, backups, and security.
+
+The other solution is to use AWS S3 buckets. These buckets are easy to use, simple to get started with, cheap at $0.03 per GB of storage, redundant (so you won't lose the files), and are easy to create access restrictions for. While running applications, you could store any CSV files you need on S3, or any other information without needing to access a database repeatedly. There are many advantages to using S3 buckets. In the past, the biggest problem for using S3 buckets with R was the lack of easy to use tools.
+
+<!--more-->
+
+The [RS3 library][rS3] is an open source package created by the Analytical Flavor System's developers to connect R to S3 buckets. Currently it only works on Linux, and partially on Windows. To get it working on Linux, it's pretty simple. First make sure you have two libraries installed:
+
+ * libxml2-dev
+ * libcurl3-dev
+
+libS3, the library behind RS3, depends on these two. The next thing is to install devtools package from CRAN if you don't have it. You can do this by running the following command:
+
+    install.packages("devtools")
+
+Then finally install the package by running the following command:
+
+    require(devtools)
+    install_github("RS3","Gastrograph")
+
+So how do you use RS3? It's pretty simple assuming you have an AWS account and know how to use S3 buckets.
+
+You first want to get your keys configured. The function to do that is `S3_connect('<access_key>','<secret_key>')`. Currently, you don't need to assign this to a variable, as every function in the package can access the two keys when this command is run. The next release of the package is to have people able to assign it to a variable to feed to each function similar to how RMySQL does it.
+
+You can do a lot of tasks such as `S3_create_bucket`, `S3_put_object`(to upload), `S3_get_object`(to download) and more. You can read more about the different functions in the documentation.
+
+Want to create a new bucket?  Here's how:
+
+{% highlight R linenos %}
+S3_connect("<my-access-key>","<my-secret-key>")
+S3_create_bucket("my-awesome-new-bucket")
+# the above defaults to private.
+# If you want the public able to read
+S3_create_bucket("my-awesome-public-bucket","public-read")
+{% endhighlight %}
+
+Want to upload a file?  Here's how:
+
+{% highlight R linenos %}
+# if you already ran the function above,
+# you don't need to rerun this function
+S3_connect("<my-access-key>","<my-secret-key>")
+
+file <- "/home/user/Documents/myfile.csv"
+
+S3_put_object("my-awesome-bucket","myfile.csv",file,"text/csv")
+
+# the second argument is where to store the file
+# so it stores it in the root of the bucket and names it myfile.csv
+{% endhighlight %}
+
+Already we use the RS3 package to connect to Twilio.  Check out our updated blog post [here][twilio].
+
+Currently, the package doesn't work in Windows, and hasn't been tested in MacOS. If you want to contribute to the package, submit a pull request on the [github][rS3] page, or [contact me][contact]. For those who love the artisan industry, and programming, we might have a spot here at AFS! Visit our [jobs][jobs] page for more info, and check back often for any new positions that open up.
+
+
+[rS3]: https://github.com/Gastrograph/RS3.git
+[contact]: mailto:evandev@gastrograph.com
+[jobs]: http://www.gastrograph.com/jobs.html
+[twilio]: {% post_url /blogs/dev/2014-07-18-twilio-and-shiny %}

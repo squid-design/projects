@@ -1,0 +1,22 @@
+require 'rbconfig'
+# if RbConfig::CONFIG['target_os'] =~ /mswin|mingw|cygwin/i
+#   gem 'wdm', '>= 0.1.0'
+# end
+
+source 'https://rubygems.org'
+gem 'jekyll'
+gem 'mini_magick', '3.8.0'
+gem 'redcarpet', '3.1.2'
+gem 'posix-spawn', '0.3.6'
+gem 'listen', '2.7'
+gem 's3_website', '2.1.16'
+gem 'rake-remote_task'
+gem 'jekyll-redirect-from'
+gem 'jekyll-minimagick'
+gem 'pdfkit'
+gem 'slack-notifier'
+gem 'octopress-debugger'
+
+group :jekyll_plugins do
+  gem 'jekyll-picture-tag', '~> 0.2.3'
+end

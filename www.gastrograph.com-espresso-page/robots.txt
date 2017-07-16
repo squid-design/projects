@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /checkout-gold.html
+Disallow: /checkout-entry-level.html
+Disallow: /espresso.html
+Disallow: /feature-log.html
+

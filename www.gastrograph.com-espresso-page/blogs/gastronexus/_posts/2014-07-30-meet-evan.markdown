@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Meet a member of the Dev Team: Evan"
+date:   2014-07-30 08:00:00
+tags: team AFS shiny
+author:
+  - Evan Farrell
+description: Interview with Gastrograph's Application Engineer Evan Farrell.
+---
+
+**What type of work do you do for Gastrograph?**
+
+I am an application engineer working on everything to do with the Producer Panel as well as running this blog.  With the Producer Panel I code in R and JavaScript to communicate between client and server side code.  It can be tricky to do sometimes, but overall it works well.  I've added tutorials, Stripe integration, and implemented the new design of the panel.
+
+**What sparked your interest in working in that field?**
+
+Before I joined AFS, I was working on my own application for homebrewers to use when they brew beer.  My next step was going to be creating an application for producers to use.  When I heard about AFS I naturally decided to join and I began working on the Producer Panel for them as it was similar to what I was doing at the time.
+
+**Why did you choose AFS?**
+
+I chose AFS because of different beverage industries they are integrated into.  My favorite industry (the industry I wanted to work in the most), is the beer industry.  From homebrewing to tasting, I love learning anything to do with beer.  I decided that AFS was a great cultural fit for me and I could work in my favorite industries doing what I love.
+
+<!--more-->
+
+**Gastrograph has a pretty unique environment. What would you say your favorite part is?**
+
+My favorite part is the overall culture of AFS.  I get along with everyone because we are similiar in interests and we all love what we do.  In addition, on the weekends going climbing, hiking and more with my coworkers is great.  I have always loved the outdoors, and sharing it with my coworkers is amazing.
+
+**You get to evaluate many different drinks. What product is your favorite to taste test?**
+
+My favorite is beer.
+
+**Why is that?**
+
+I have been a homebrewer for 4 years now and a lover of craft beer for just as long.  In the far future I could see myself easily opening my own brewery, as I just love it.  And there are so many unique beers to taste.  The broad spectrum of flavors in beer is unlike any other artisan product.  On one hand you can have a Rauchbier with strong smoked malt flavor that is reminiscent of bacon, while on the other there could be a light orange-saison which has a pepper and orange flavor from the yeast and zest of an orange.  It makes it so interesting to try new beers.  My favorite are sour beers.
+
+**Working at a startup can be time consuming. What activities do you do in your free time to alleviate the stress?**
+
+It is very time consuming.  The nice thing about AFS is that we do coffee and other reviews throughout the day.  Even the 5 minute break we take to do the tastings can really help break up the day.  On the weekends I try to do one day of climbing and one day of hiking.  The physical activity really helps clear my mind and the hard nature of climbing allows me to focus away from work for a period of time.
+
+**If you were a character from Star Wars, which one would you be?**
+
+Probably Han Solo, and not just because of my looks.  I enjoy adventure, traveling, and even traveling alone sometimes.  Also, Han Solo has the best spacecraft.
+
+**What would you choose as your last meal?**
+
+It would definitely be a porterhouse steak, cooked rare to medium rare with a good amount of kosher salt on the steak the night before.  Then just prior to cooking,  some lovely fresh ground pieces of black pepper are added.  Serve it with a nice piece of butter on top, a loaded baked potato on the side with copious amounts of sour cream.  I'll be drinking a perfect Trappist Quadrupel, perhaps a St. Bernardus 12.  For dessert, I will have some chocolate chip cheesecake with Ardbeg Islay scotch on the side.
+
+**If you were given a free full-page ad in the newspaper and had to sell yourself in six words or less, how would the ad read?**
+
+Depends what the ad is for.  If it's for people to know about AFS:  "Adventurer with beard analyzing artisan products."
+
+**Who would win a battle between a ninja and a pirate?**
+
+A ninja.  A pirate is a swashbuckling man who has no finesse.  On the on the contrary, a ninja was once a samurai&mdash;they no longer have honor, but they have a long tradition of training.  They have art and skill.  That is why a ninja would win.

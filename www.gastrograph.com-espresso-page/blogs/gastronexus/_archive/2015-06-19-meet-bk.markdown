@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Meet Bokang Huang"
+date:   2015-06-19 12:28:58
+tags: employee iOS
+author:
+  - Bokang Huang
+description: Interview with Gastrograph's lead iOS developer Bokang Huang.
+---
+
+**What type of work do you do for Gastrograph?**
+
+Mobile application development
+
+**What sparked your interest in working in that field?**
+
+I would say the rapidly growing demand of mobile applications plus my interest in mobile technology.
+
+**Why did you choose AFS?**
+
+AFS gives me freedom to do whatever I can do best to help us better serve the increasingly demanding craft beverages market.
+
+<!--more-->
+
+**Gastrograph has a pretty unique environment. What would you say your favorite part is?**
+
+The diversity of people.
+
+**You get to evaluate many different drinks. What product is your favorite to taste test?**
+
+KBS by Founders.
+
+**Why is that?**
+
+Dark, delicately crafted and extremely rare.
+
+**Working at a startup can be time consuming. What activities do you do in your free time to alleviate the stress?**
+
+Leisure reading, playing basketball and FIFA.
+
+**What would you choose as your last meal?**
+
+羊蝎子 Lamb (spine)
+{% picture post-images post-images/lamb-spine.jpg %}

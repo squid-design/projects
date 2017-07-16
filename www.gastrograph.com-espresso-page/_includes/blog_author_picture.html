@@ -1,0 +1,14 @@
+{% if class %}
+  {% assign classes = class %}
+{% else %}
+  {% assign classes = "author_image" %}
+{% endif %}
+
+{% if post %}
+  {% assign author_data = site.data.authors | where:"name", post.author.first %}
+  {% assign author = author_data.first %}
+{% endif %}
+
+<a href="/blogs/authors/{{author.name | downcase | replace:' ','-'}}">
+  <img src="/assets/images/employees/portrait-{{ author.short_name }}.png" class="{{classes}} center-block" alt="Picture of {{author.name}}"/>
+</a>

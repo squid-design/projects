@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Meet Yuqi Zhou"
+date:   2015-06-19 16:32:03
+tags: employee data science about
+author:
+  - Yuqi Zhou
+description: Interview with Gastrograph's data scientist Yuqi Zhou.
+---
+
+**What type of work do you do for Gastrograph?**
+
+I am now doing a project to identify different kinds of flaws in beer through data science. The key factors I am working on now are:
+
+  1. Building a model to identify a beer with one kind of flaw versus a beer without any flaws and increasing the accuracy of the model by preprocessing the data and tuning the model.
+
+  2. Figuring out a way to identify all 20 most common flaws.
+
+  3. Improving the accuracy of predicting the flaw-status of a batch of product.
+
+**What sparked your interest in working in that field?**
+
+First, I am interested in seeking the secrets hidden within data. The dataset of 24 unique flavors, which are all correlated with other flavors, is new and attractive to me. Also using this kind of data to control the quality of a product sounds new and exciting. What’s more, I really like food and drink that tastes amazing.
+
+**Why did you choose AFS?**
+
+First, AFS is doing what I am interested in, as said above. Second, I like Happy Valley, and I like the tense and friendly atmosphere here; we both work and play together.
+
+<!--more-->
+
+**Gastrograph has a pretty unique environment. What would you say your favorite part is?**
+
+There are many parts I like here. For example, I like having different kinds of dinner together after a day’s tense work. During the dinner we hold our special tradition of ”bowl cheers”, and then we share the “lows and highs” from our whole day. This makes me feel as if we are a family, and we work together to achieve our goals. I like celebrating one’s birthday in the company, and we share a special alcohol and sing for him. I also like when all of us above 21 celebrate somebody else's 21st birthday. I also like the martial arts we do twice a week. I don’t know whether what we learn in the martial arts class will happen in our real life, but I like that we take the class together and fight with each other. I also like all the activities we do together during our free time.
+
+**You get to evaluate many different drinks. What product is your favorite to taste test?**
+
+I like coffee the most; I really like the smell and mouth feel of coffee.
+
+**Working at a startup can be time consuming. What activities do you do in your free time to alleviate the stress?**
+
+Yeah, it’s busy during Monday to Friday, but sometimes I may see a movie, play billiards, or play bowling with my friends after work. During the weekends I may go hiking, shopping or just go somewhere for food with my friends or with our company. I fight for running every morning, but I always lose.
+
+**What would you choose as your last meal?**
+
+Pork ribs maybe. I don’t know why. Maybe I am hungry now.
+
+**Who would win in a battle between a ninja and a pirate?**
+
+I support the pirate. Their lives are much more interesting. I believe they will come up with a more interesting way to fight. They don’t care much about losing. They can continue to fight next time after a loss until they win, while the ninja will commit seppuku after a loss. In all, I think pirates are brave and open-minded.

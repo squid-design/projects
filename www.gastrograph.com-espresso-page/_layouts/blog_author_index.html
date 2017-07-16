@@ -1,0 +1,15 @@
+---
+layout: blog
+---
+{% include blog_page_header.html %}
+<div class="row">
+    <div class="col-md-12">
+        {% for post in site.posts %}
+          {% if post.author contains page.author %}
+            {% assign author_data = site.data.authors | where:"name", post.author %}
+            {% assign author = author_data | first %}
+            {% include author_index.html %}
+          {% endif %}
+        {% endfor %}
+    </div>
+</div>

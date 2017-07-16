@@ -1,0 +1,126 @@
+.no-js {
+  display: none;
+}
+.espresso-body {
+  overflow-x: hidden;
+  height: 100%;
+  h2 {
+    padding-bottom: 5%;
+  }
+  p {
+    text-align: justify;
+  }
+}
+     .modal .modal-dialog {
+        width: 99%;
+        height: 95%;
+        margin: auto;
+        border-radius: 20%;
+        z-index: 9999999;
+        @media (min-width: @screen-xs-min) {
+          height: 100%;
+        }
+      }
+      .modal-header {
+        padding: 0 !important;
+      }
+      .modal-content {
+        margin: 5% auto;
+        width: 90%;
+        padding: 5%;
+        overflow-y: hidden;
+        height: 92%;
+        background-color: #1e1e1e;
+        border: dashed 2px white;
+        @media (min-width: @screen-xs-min) {
+          height: 100%;
+          overflow-y: scroll;
+        }
+        h1, h2, h3, h4, p, ul, .close {
+          color: white;
+        }
+        h2 {
+          padding-top: 0;
+        }
+        .close {
+          width: 100%;
+          span {
+          float: right;
+          color: white !important;
+        }
+        }
+         .crema {
+          width: 60%;
+        }
+
+        .tab-pane {
+          #two {
+          padding-top: 10%;
+
+        }
+      }
+        .dose-tabs {
+          float: left;
+          padding: none;
+          margin-left: 35%;
+          position: fixed;
+          display: block;
+          bottom: 2%;
+          @media (min-width: @screen-xs-min) {
+            position: relative;
+          }
+
+          li.active a {
+            background: none !important;
+            border: solid 1px #428BCA;
+          }
+        }
+        .time-graphs {
+          list-style-type: none;
+          position: relative;
+
+          ul {
+            list-style-type: none;
+            float: left;
+          }
+          li {
+            display: inline-block
+          }
+          img {
+            width: 200px;
+            height: 200px;
+            vertical-align: middle;
+          }
+        }
+#overlay-back {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 100%;
+    background : #000;
+    opacity    : 0.6;
+    filter     : alpha(opacity=60);
+    z-index    : 999;
+    overflow: hidden;
+    display    : none;
+}
+
+#graph1-overlay, #graph2-overlay, #graph3-overlay, #graph4-overlay {
+    position : absolute;
+    top      : -40%;
+    left     : 30%;
+    width    : 95%;
+    height   : 100%;
+    z-index  : 99999;
+    overflow: hidden;
+    display  : none;
+    @media (min-width: @screen-xs-min) {
+      width: 100%;
+      left: 5%;
+    }
+  }
+        .coffee-strength-div {
+  width: 80%;
+        }
+      }

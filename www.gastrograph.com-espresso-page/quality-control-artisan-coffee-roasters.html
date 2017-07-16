@@ -1,0 +1,49 @@
+---
+layout: landing
+validate: bootstrap
+---
+<div class="fullscreen background-coffee">
+  <div class="fullscreen-content-a">
+    <div class="fullscreen-content-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="super">Quality control protects your brand</h1>
+            <h3>Define your brand before a bad batch does.</h3>
+          </div>
+          <div class="landing-text-container-last col-md-6 col-md-offset-6">
+            <h4>Learn how to use data science, flavor analysis, and sensory science with our free, 6-week email course!</h4>
+          </div>
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="visible-xs-block visible-sm-block text-center col-md-6">
+            <a data-toggle="modal" href="#modal-subscribe-email-course" class="btn btn-primary btn-lg" id="email-course-link-open-modal"><span>Sign up</span></a>
+          </div>
+          <div class="visible-md-block visible-lg-block text-right col-md-6 col-md-offset-5">
+            <a data-toggle="modal" href="#modal-subscribe-email-course" class="btn btn-primary btn-lg" id="email-course-link-open-modal"><span>Sign up</span></a>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.fullscreen-content-b -->
+  </div><!-- /.fullscreen-content-a -->
+</div><!-- /.fullscreen /.background-coffee -->
+
+<div class="modal fade" id="modal-subscribe-email-course" role="dialog" aria-labelledby="modal-label">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="email-link-close-from-signup-modal">&times;</button>
+        <h5 class="modal-title-email-course text-center" id="modal-label">Learn how to make quality control simple and effective</h5>
+      </div><!-- /.modal-header -->
+      <div class="modal-body">
+        <p class="text-center">We'll send you two emails weekly that detail effective steps for building quality control, along with insight into our system's key methods. It's quicky, easy, and straight to the point.</p>
+        <div id="mc_embed_signup">
+          {% include email-course-coffee-qc.html %}
+        </div>
+      </div><!-- /.modal-body -->
+      <div class="modal-email-course-footer">
+        <button type="button" class="btn btn-danger center-block" data-dismiss="modal" id="link-coffee-landing-close-from-modal">No thanks, I'll stay inconsistent.</button>
+      </div><!-- /.modal-email-course-footer -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal /.fade -->

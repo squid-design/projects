@@ -1,0 +1,94 @@
+---
+layout: website
+title: Gastrograph Jobs | Discover Your Next Career
+active: jobs
+description: Work with Gastrograph to help artisan producers make the most consistent, best products that have ever existed.
+---
+<div class="hero hero-jobs">
+  <div class="well-hero well-nonindex">
+    <h1 class="text-center">Work With Us</h1>
+  </div>
+</div><!-- /.hero /.hero-jobs -->
+<div class="container">
+  <div class="row">
+    <p class="text-center jobs-intro-text">
+      Analytical Flavor Systems builds quality control tools for artisan beverage producers. Our tools track and flag products for batch variation, contamination, or latent flaws. We protect our clients from shipping a bad batch or a product that doesn't meet their quality standards. We are an angel-backed, early-stage startup with clients and revenue. We consider ourselves a high-performance team with an unshakable work ethic.
+      <br>
+      <br>
+      As an employee of Analytical Flavor Systems, you will be trained as a professional taster and learn the production processes of our clients.
+      <br>
+      <br>For further information, please check out our <a href="/resources/index.html">Whitepapers</a> and <a href="/open-source.html">Open Source page.</a>
+    </p>
+  </div><!-- /.row -->
+  <div class="row">
+    <h2 class="text-center" style="padding: 2%";>Current Opportunities</h2>
+    <div class="panel-group" id="accordion">
+      {% for job_type in site.data.job_types %}
+      {% assign jobs = site.data.jobs | where: 'type', job_type.type %}
+      <h3 class="text-center">{{job_type.name}}</h3>
+      {% for job in jobs %}
+      <div class="panel panel-default">
+        <div class="jobs-panel-heading panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ job.position | replace: ' ', '-' | downcase }}">
+          <h4 class="panel-title">{{ job.position }}</h4>
+        </div><!-- /.jobs-panel-heading -->
+        <div id="collapse-{{ job.position | replace: ' ', '-' | downcase }}" class="panel-collapse collapse">
+          <div class="panel-body">
+            <h5>Your role:</h5>
+            <p class="jobs-listing-subtext">{{ job.role }}</p>
+            <h5 class="jobs-listing-header">Everyday tasks:</h5>
+            <ul class="jobs-listing-bullets">
+              {% for task in job.tasks %}
+              <li>{{ task }}</li>
+              {% endfor %}
+            </ul>
+            <h5 class="jobs-listing-header">Must have:</h5>
+            <p class="jobs-listing-subtext">
+              <ul class="jobs-listing-bullets">
+                {% for requirement in job.requirements %}
+                <li>{{ requirement }}</li>
+                {% endfor %}
+              </ul>
+            </p>
+            <h5 class="jobs-listing-header">Bonus:</h5>
+            <p class="jobs-listing-subtext">
+              <ul class="jobs-listing-bullets">
+                {% for bonus in job.bonuses %}
+                <li>{{ bonus }}</li>
+                {% endfor %}
+              </ul>
+            </p>
+          </div><!-- /.panel-body -->
+          {% assign curator = site.data.authors | where: 'short_name', job.curator_first_name | first %}
+          <h3 class="text-center">Apply by emailing:</h3>
+          <h4 class="text-center">{{ curator.short_name | capitalize }}</h4>
+          <button type="button" class="btn btn-info center-block" id="jobs-link-position-email-{{ curator.email }}" onClick="parent.location='mailto:{{ curator.email }}?subject={{ job.position | replace: ' ', '%20' }}%20Job%20Inquiry'">Email {{ curator.short_name | capitalize }}!</button>
+        </div><!-- /#collapse -->
+      </div><!-- /.panel -->
+      {% endfor %}
+      {% endfor %}
+    </div><!-- /.panel-group -->
+  </div><!-- /.row -->
+  <div class="row" style="padding: 2%;">
+    <h2 class="text-center">On the Map</h2>
+    <br>
+    <div class="col-xs-12 col-md-6 col-md-offset-1 center-vertical">
+      <img class="img-responsive center-block" src="/assets/images/jobs-map.png" alt="Located in the heart of Pennsylvania">
+    </div>
+    <div class="jobs-map-text-block col-xs-12 col-md-4 center-vertical center-block">
+      <p class="text-center jobs-map-text">
+        Our Hacker House is located
+        <br>
+        near downtown State College-
+        <br>
+        a short walk from the
+        <br>
+        Penn State University Campus.
+        <br>
+        <br>
+        (305) 794-8392
+        <br>
+        <a href="mailto:JasonCEO@gastrograph.com" id="jobs-link-email-jason">JasonCEO@gastrograph.com</a>
+      </p>
+    </div>
+  </div><!-- /.row -->
+</div><!-- /.container -->

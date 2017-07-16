@@ -1,0 +1,23 @@
+- name: founder
+  title: The Founder
+  title_plural: The Founder
+
+- name: dev
+  title: The Code Pig
+  title_plural: The Code Pigs
+
+- name: chemistry
+  title: The Chemist
+  title_plural: The Chemists
+
+- name: data
+  title: The Data Scientist
+  title_plural: The Data Scientists
+
+- name: design
+  title: The Designer
+  title_plural: The Designers
+
+- name: sales
+  title: The Customer Success Team
+  title_plural: The Customer Success Team

@@ -1,0 +1,58 @@
+---
+layout: website
+title: The Gastrograph Team
+active: about
+description: Meet the Gastrograph team.
+---
+<div class="hero hero-about-us">
+  <div class="well-hero well-nonindex">
+    <h1 class="text-center">About Us</h1>
+  </div><!-- /.well-hero well-nonindex -->
+</div><!-- /.hero /.hero-aboutus -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p class="text-center">Analytical Flavor Systems builds tools for quality control in the artisan beverage industry. By utilizing sensory science, data science, and analytical chemistry, we are able to protect our clients’ products from batch variations, flaws, and contaminations. Analytical Flavor Systems is focused on the craft beer, premium alcohol, and artisan coffee industries.</p>
+    </div>
+  </div>
+  <div class="row">
+    <h2 class="text-center"> Meet the Team </h1>
+  </div><!-- /.row -->
+  {% for team in site.data.teams %}
+    {% assign employees = site.data.authors | where:"team", team.name | where:'active', true %}
+    {% if employees.size > 0  %}
+      <div class="row content">
+        <h3 class="text-center">
+          {% if employees.size > 1 %}
+            {{team.title_plural}}
+          {% else %}
+            {{ team.title }}
+          {% endif %}
+        </h3>
+      </div>
+      {% for employee in employees %}
+        <div class="row content">
+          <div class="z-form col-md-6 {% cycle '','col-md-push-6' %} center-vertical">
+            {% assign has_post = site.posts | where: 'author', employee.name | first %}
+            {% if has_post != null %}
+              <a href="/blogs/authors/{{employee.name | downcase | replace: ' ','-'}}" id="about-link-author-page-{{employee.name | downcase | replace: ' ', '-'}}">
+                <img class="img-responsive center-block" src="/assets/images/employees/portrait-{{employee.short_name}}.png" alt="Image of {{employee.name}}">
+              </a>
+            {% else %}
+              <img class="img-responsive center-block" src="/assets/images/employees/portrait-{{employee.short_name}}.png" alt="Image of {{employee.name}}">
+            {% endif %}
+          </div>
+          <div class="z-form col-md-6 {% cycle '','col-md-pull-6' %} center-vertical">
+            <p>
+              <strong>{{employee.name}}</strong> - <em>{{employee.position}}</em>
+              <br>
+              <a href="mailto:{{employee.email}}" id="about-link-email-{{employee.name | downcase | replace: ' ', '-'}}"><em>{{employee.email}}</em></a>
+              <br><br>
+              {{employee.bio}}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</div><!-- /.container -->

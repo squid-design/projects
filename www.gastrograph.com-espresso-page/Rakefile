@@ -1,0 +1,75 @@
+require 'rake/remote_task'
+require 'slack-notifier'
+if ENV['port'] != ''
+    port = ENV['port']
+else
+    port = 80
+end
+
+# set staging IP
+set :domain, 'gastrodell'
+
+#### ALL #####
+desc "clean"
+task :clean do
+    rm_rf '_site'
+end
+
+desc "grunt"
+task :grunt do
+    sh "grunt less"
+    sh "grunt coffee"
+    sh "grunt uglify"
+end
+
+desc "only work if pushed via git"
+task :checks do
+    local = `git rev-parse @`.delete("\n")
+    remote = `git rev-parse @{u}`.delete("\n")
+    base = `git rev-parse @ @{u}`.delete("\n")
+    branch = `git rev-parse --abbrev-ref HEAD`.delete("\n")
+    if branch != 'master'
+        abort "You can only deploy from master"
+    end
+    if local == base
+        abort "You need to pull from git first"
+    elsif remote == base
+        abort "You need to push to git remote first"
+    elsif local == remote
+        puts "git up-to-date"
+    else
+        abort "Need to git push"
+    end
+end
+
+
+desc "build the site"
+task :build do
+    if File.exists? "_config.production.yml"
+        sh "rm _config_production.yml"
+    end
+    sh "cat production.yml > _config_production.yml && sed -e '1,/# copy #/d' _config.yml  >> _config_production.yml"
+    sh "bundle exec jekyll build --config _config_production.yml"
+    sh "rm _config_production.yml"
+end
+
+#### END ALL #####
+
+#### Production ####
+desc "rebuild, then deploy to remote"
+task :deploy => [:checks, :clean, :grunt, :build] do
+    sh "bundle exec s3_website push"
+    notifier = Slack::Notifier.new "#{ENV['SLACK_URL']}", channel: '#dev_team', username: 'DeployerBot'
+    notifier.ping "Website Deployed"
+end
+
+#### Staging ######
+desc "rebuild, then deploy to remote"
+task :staging => [:clean, :grunt, :build_drafts] do
+    sh "bundle exec s3_website push --config-dir _staging"
+end
+
+desc "build the site with drafts"
+task :build_drafts do
+    sh "bundle exec jekyll build --drafts --config _config.yml"
+end

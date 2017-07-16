@@ -1,0 +1,11 @@
+ - name: Gastronexus
+   title: The GastroNexus
+   slogan: All up in your flavor space
+
+ - name: Dev
+   title: Development
+   slogan: The processing of flavor
+
+ - name: Data
+   title: The Data Mine
+   slogan: <i><span id="data-int">&int;</span><span id="data-slogan"> Flavor dF<span></i>

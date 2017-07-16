@@ -1,0 +1,63 @@
+---
+layout: website
+active: learn
+validate: bootstrap
+---
+<div class="container content">
+  <div class="whitepaper">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 center">
+        <h1 id="whitepaper-title">{{ page.title }}</h1>
+        <br>
+        <h4 id="whitepaper-title">{{ page.subtitle }}</h4>
+        <br>
+        <p class="whitepaper-flavor-text" data-toggle="tooltip" data-placement="bottom" title="We like to throw monkey wrenches into these white papers to protect our trade secrets.
+
+        The whitepapers as a whole are correct, but some of the details are fuzzy, so email us if you find a monkey wrench - we would like to hire you.">Notice anything backwards, missing, misleading, or wrong?  <i class="fa fa-info-circle" style="color: black;"></i></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11 center">
+        <div class="row">
+          <div class="col-md-2 center">
+            <h4>Authors</h4>
+            <hr>
+            {% assign authorCount = page.author | size %}
+            {% if authorCount == 1 %}
+              {% assign authorData = site.data.authors | where: "name", page.author %}
+              {% assign author = authorData | first %}
+              <h5>{{author.name}}</h5>
+              <em class="author_position">{{author.position}}</em>
+              <br>
+              <br>
+            {% else %}
+              {% for currentAuthor in page.author %}
+                {% assign authorData = site.data.authors | where: "name", currentAuthor %}
+                {% assign author = authorData | first %}
+                <h5>{{author.name}}</h5>
+                {% comment %} Because Jason wanted a different title {% endcomment %}
+                {% if author.name != "Jason Cohen" %}
+                  <em class="author_position">{{author.position}}</em>
+                {% else %}
+                  <em class="author_position">Founder &amp; Lead Data Scientist</em>
+                {% endif %}
+                <br>
+                <br>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <div class="col-md-10 whitepaper-text">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include mailchimp_access.html %}
+{% include mixpanel-event--whitepaper.html %}

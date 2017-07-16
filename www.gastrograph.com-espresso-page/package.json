@@ -1,0 +1,20 @@
+{
+  "name": "static-site",
+  "version": "3.0.0",
+  "description": "www.gastrograph.com",
+  "main": "Gruntfile.js",
+  "author": "John Dori",
+  "repository": {
+    "type": "git",
+    "url": "https://jdori@bitbucket.org/Gastrograph/jekyll-site.git"
+  },
+  "dependencies": {
+    "bower": "*",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-less": "~0.11.4",
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-coffee": "~0.11.1"
+  }
+}

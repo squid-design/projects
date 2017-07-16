@@ -1,0 +1,61 @@
+
+
+.resources-image {
+	width: 100%;
+	margin-top: -145px;
+}
+
+#whyusegg1 {
+	text-align: center;
+	width: 60%;
+	font-size: 24px;
+	font-weight: lighter;
+}
+
+#resources-wrapper {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#resources-wrapper p {
+	text-align: center;
+	line-height: auto;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+#resources-wrapper h2 {
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#bluebar {
+	background-color: #2283b4;
+	width: 100%;
+}
+
+.beer-book, .trust, .comparing-ofp, .bayesian {
+	box-shadow: 5px 5px 3px #000000;
+	position:relative;
+}
+
+.image-row {
+	width:100%;
+	vertical-align: middle;
+	display:inline-block;
+}
+ .whitepaper1, .whitepaper2, .whitepaper3 {
+	padding: 20px;
+	position:relative;
+	display:inline;
+
+}
+
+
+
+
+
+
+
+
+

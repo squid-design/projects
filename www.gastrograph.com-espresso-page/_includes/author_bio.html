@@ -1,0 +1,82 @@
+<div id="author_bio" class="row">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <hr>
+    </div>
+  </div>
+  <div class="col-md-11 col-md-offset-1">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 extra-margin-top center-vertical">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="center">
+              <a href="/blogs/authors/{{author.name | downcase | replace:' ','-'}}">
+                <span><h4>{{ author.name }}</h4></span>
+              </a>
+              <em class="author_position">{{ author.position }}</em>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 center">
+            {% assign class = 'author_bio_image' %}
+            {% include blog_author_picture.html post=post class=class %}
+          </div>
+        </div>
+        <!-- start of icons -->
+        {% if author.twitter != 'none' %}<!-- if author has twitter -->
+          {% if author.github != 'none' %}<!-- if author has twitter and github-->
+            <div class="row" style="margin-top:10px;">
+              <div class="col-xs-3 col-xs-offset-3">
+                <div class="center">
+                  <a href="http://github.com/{{ author.github }}"><img src="{{"/assets/images/github-logo.png" | prepend: site.baseurl}}" class="imgLink"></a>
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <div class="center">
+                  <a href="http://twitter.com/{{ author.twitter }}"><img src="{{"/assets/images/twitter-logo.png" | prepend: site.baseurl}}" class="imgLink"></a>
+                </div>
+              </div>
+            </div>
+          {% endif %}<!-- end author has twitter/github-->
+          {% if author.github == 'none' %}<!-- if author has twitter only -->
+            <div class="row" style="margin-top:10px;">
+              <div class="col-xs-4 col-xs-offset-4">
+                <div class="center">
+                  <a href="http://twitter.com/{{ author.twitter }}"><img src="{{"/assets/images/twitter-logo.png" | prepend: site.baseurl}}"></a>
+                </div>
+              </div>
+            </div>
+          {% endif %}<!-- end of author twitter only -->
+        {% endif %}<!-- end of author twitter -->
+        {% if author.twitter == 'none'%}<!-- start of author has github -->
+          {% if author.github != 'none' and author.stack_exchange != 'none' %} <!-- Author has only Github and StackExchange -->
+            <div class="row" style="margin-top:30px;">
+              <div class="col-xs-3 col-xs-offset-3 col-sm-3 col-md-3 col-md-offset-0 col-centered">
+                <div class="center">
+                  <a href="http://github.com/{{ author.github }}"><img src="{{"/assets/images/github-logo.png" | prepend: site.baseurl}}" class="imgLink"></a>
+                </div>
+              </div>
+              <div class="hidden-xs col-sm-3 col-md-3 col-centered">
+                <a href="http://stackexchange.com/users/{{ author.stack_exchange }}"><img src="http://stackexchange.com/users/flair/{{ author.stack_exchange }}.png" class="imgLink" width="208" height="58" alt="profile for {{ author.name}} on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for {{ author.name }} on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
+              </div>
+            </div>
+          {% endif %}
+          {% if author.github != 'none' and author.stack_exchange == 'none' %}<!-- start of author has only github -->
+            <div class="row" style="margin-top:10px;">
+              <div class="col-xs-4 col-xs-offset-4">
+                <div class="center">
+                      <a href="http://github.com/{{ author.github }}"><img src="{{"/assets/images/github-logo.png" | prepend: site.baseurl}}"></a>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+        <!-- end of icons -->
+      </div>
+      <div class="col-md-8 extra-margin-top center-vertical">
+        <p> {{ author.bio }} </p>
+      </div>
+    </div>
+  </div>
+</div>

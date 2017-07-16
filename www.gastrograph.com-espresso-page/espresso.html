@@ -1,0 +1,495 @@
+---
+layout: espresso-layout
+title: Gastrograph | Espresso Calculator | Analytical Flavor Systems
+active: index
+description: "A predictive espresso calculator based on machine learning and artificial intelligence"
+---
+<!-- Modals -->
+<div class="modal fade" id="dose-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog espresso-modal-dialog" role="document">
+    <div class="modal-content espresso-modal-content">
+      <div class="modal-header espresso-modal-header">
+        <button type="button" class="espresso-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X
+          </span>
+        </button>
+        <h2 class="modal-title text-center" id="myModalLabel">DOSE
+        </h2>
+      </div>
+      <div class="modal-body dose-modal-body">
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="one">
+            <p class="text-center"><b>Dose</b> is the anchor of every espresso recipe. It is the weight of dry ground coffee that you are using to make an espresso, and depending on your espresso style, it can be anywhere from 5-30 grams, though in general modern espresso hovers between 18-21g.
+            Deciding on your dose is always the first step to creating an espresso recipe. Before that, you should think about these questions:
+              <ul class="center-block">
+                <li>How much espresso do you want to make?
+                </li>
+                <li>What size cup do you want to extract?
+                </li>
+                <li>What strength do you want to attain?
+                </li>
+                <li>What kind of flavor profile are you looking to achieve?
+                </li>
+              </ul>
+            </p>
+          </div><!-- ./tab panel -->
+          <div role="tabpanel" class="tab-pane" id="two">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-center">When we talk about strength, we refer to the total dissolved solids (TDS) within the coffee. <br>This is not to be confused with the intensity of the coffee, which refers to the magnitude of perceived flavor.
+                </p>
+              </div><!-- ./ col 6-->
+              <div class="col-md-6">
+                <h4 class="text-center">Drip/Filter VS. Espresso
+                </h4>
+                <div class="coffee-strength-div center-block">
+                  <img class="coffee-strength center-block img-responsive" src="/assets/images/coffee-levels.svg">
+                </div><!-- ./ coffee-strength div -->
+              </div><!-- ./ col 6-->
+            </div> <!--./ row-->
+          </div><!-- ./ tabpanel -->
+          <div role="tabpanel" class="tab-pane" id="three">
+            <p class="text-center">The most efficient way to communicate the strength of coffee is to talk in terms of percentages. Most brewed coffee are typically between 1.2-1.8% coffee to 98.2-98.8% water. Most espressos are typically between 7-12% coffee. Even at such a low TDS, espresso has a strength that is greater than brewed coffee by tenfold. Coffee is an incredibly intense flavoring agent and any small variations in strength are easily identified by our palates.
+            </p>
+          </div><!-- ./ tab-panel-->
+        </div><!-- ./ tab-pane -->
+        <!-- Nav tabs -->
+        <ul id="espresso-modal-tabs" class="nav nav-pills center-block dose-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#one" role="tab" data-toggle="tab">1
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#two" role="tab" data-toggle="tab">2
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#three" role="tab" data-toggle="tab">3
+            </a>
+          </li>
+        </ul><!-- ./ dose tabs -->
+      </div><!-- ./ modal-body-->
+    </div>
+  </div>
+</div><!-- ./ end modal dose-->
+
+<div class="modal fade" id="time-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog espresso-modal-dialog" role="document">
+    <div class="modal-content espresso-modal-content">
+          <div id="graph1-overlay">
+        <span>
+          <img class="img-responsive" src="/assets/images/time-graph1.png">
+        </span>
+      </div>
+      <div id="graph2-overlay">
+        <span>
+          <img class="img-responsive" src="/assets/images/time-graph2.png">
+        </span>
+      </div>
+      <div id="graph3-overlay">
+        <span>
+          <img class="img-responsive" src="/assets/images/time-graph3.png">
+        </span>
+      </div>
+      <div id="graph4-overlay">
+        <span>
+          <img class="img-responsive" src="/assets/images/time-graph4.png">
+        </span>
+      </div>
+      <div id="overlay-back">
+      </div>
+      <div class="modal-header espresso-modal-header">
+        <button type="button" class="espresso-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X
+          </span>
+        </button>
+        <h2 class="modal-title text-center" id="myModalLabel">TIME
+        </h2>
+      </div><!-- ./ modal-header -->
+      <!-- Tab panes -->
+      <div class="modal-body time-modal-body">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active espresso-popup-wrapper" id="uno">
+            <p class="text-center">
+              Time is the last ingredient in the espresso recipe, which is a more quantitative way of measuring the grind size of the coffee.
+            </p>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="time-graphs">
+                  <ul class="time-graphs-list">
+                    <li>
+                      <a id="graph1-button"href="#">
+                        <img class="time-graph1 img-responsive"src="/assets/images/time-graph1.png" alt="/assets/images/time-graph1.png">
+                      </a>
+                    </li>
+                    <li>
+                      <a id="graph2-button" href="#">
+                        <img class="time-graph2 img-responsive" src="/assets/images/time-graph2.png" alt="/assets/images/time-graph2.png">
+                      </a>
+                    </li>
+                    <li>
+                      <a id="graph3-button" href="#">
+                        <img class="time-graph3 img-responsive" src="/assets/images/time-graph3.png" alt="/assets/images/time-graph3.png">
+                      </a>
+                    </li>
+                    <li>
+                      <a id="graph4-button" href="#">
+                        <img class="time-graph4 img-responsive" src="/assets/images/time-graph4.png" alt="/assets/images/time-graph4.png">
+                      </a>
+                    </li>
+                  </ul>
+                </div><!-- ./ time graphs-->
+              </div><!--./ col -->
+            </div><!-- row-->
+          </div><!-- tab panel -->
+          <div role="tabpanel" class="tab-pane" id="dos">
+            <p class="text-center">
+              These graphs are generated based on various trials at different parameters. They give a general description of how grind size and tamp technique can affect the level of total dissolved solids (TDS) and the balance of flavor. The palate is a strong tool, but these graphs do not provide sufficient evidence due to a lack of quantifiable variables. For that, we must collect some data.
+            </p>
+          </div><!--./ tab-panel-->
+        </div><!-- /.tab-content -->
+        <!-- Nav tabs -->
+        <ul id="espresso-modal-tabs" class="nav nav-pills center-block dose-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#uno" role="tab" data-toggle="tab">1
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#dos" role="tab" data-toggle="tab">2
+            </a>
+          </li>
+        </ul>
+      </div><!-- modal-body-->
+    </div>
+  </div>
+</div><!-- ./ end modal time-->
+
+<div class="modal fade" id="yield-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog espresso-modal-dialog" role="document">
+    <div class="modal-content espresso-modal-content">
+      <div class="modal-header espresso-modal-header">
+        <button type="button" class="espresso-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">X
+          </span>
+        </button>
+        <h2 class="modal-title text-center" id="myModalLabel">YIELD
+        </h2>
+      </div>
+      <div class="modal-body yield-modal-body">
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="un">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <p class="text-center">
+                  Yield is the next ingredient in the espresso recipe, which we will measure in weight. Since espresso is pulled at such low volumes, the idea of trying to measuring yield in terms of volume is erroneous because a misread of 1mm will result in a 5% error. So remember, <b><i>weight</i></b> not volume.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-center center-block" style="color: #fff;"><center><i>A little note about crema:</i></center>
+                </p>
+                <img class="img-responsive center-block crema" src="/assets/images/crema.png">
+              </div><!--./ col-->
+            </div><!--./ row-->
+          </div><!-- ./ tab panel -->
+          <div role="tabpanel" class="tab-pane" id="deux">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-center">
+                  As a coffee ages after roasting, that carbon dioxide dissipates and the espresso has much less crema. Crema is mostly air and its density is far lower than the espresso liquid below, which makes volume measurements close to meaningless.<br>
+
+                  Yield is a major battle between strength and extraction. More yield gets you more extraction, but lower strength. Less yield gets you less extraction, but higher strength.
+                </p>
+              </div><!--./ col 12-->
+            </div> <!-- ./row-->
+          </div><!-- ./ tab-panel -->
+          <div role="tabpanel" class="tab-pane" id="trois">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-center">
+                  This is a regular 30-second espresso shot. You’ll notice no numbers apart from time. This is deliberate, because this example could be any combination of dose, yield, time, extraction or strength. The specifics don’t really matter. What matters is how the different elements move and change through time.
+                </p>
+              </div><!--./ col-->
+              <div class="col-md-6">
+                <img class="img-responsive yield-gif center-block" width="40%" src="/assets/images/yield-gif.gif">
+              </div><!--./ col-->
+            </div><!-- ./row-->
+          </div><!-- ./tab-panel-->
+        </div><!--./ tab-pane -->
+            <!-- Nav tabs -->
+        <ul id="espresso-modal-tabs" class="nav nav-pills center-block dose-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#un" role="tab" data-toggle="tab">1
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#deux" role="tab" data-toggle="tab">2
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#trois" role="tab" data-toggle="tab">3
+            </a>
+          </li>
+        </ul><!-- ./ dose-tabs -->
+      </div><!-- modal-body-->
+    </div>
+  </div>
+</div><!-- ./ end modal yield-->
+
+<!---MOBILE VERSION -->
+<div id="wrapper" class="visible-xs-block">
+  <section id="mobile-intro">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="overlay container-fluid">
+          <span>
+            <h1 class="slide1-title text-center">A Matt Perger & Analytical Flavor Systems
+            </h1>
+          </span>
+          <div class="container-fluid collab-container">
+            <img id="collab-head" class="collab center-block img-responsive" src="assets/images/collab.svg" type="image/svg+xml" alt="Your browser doesn't support SVGs">
+          </div><!---./ collab container-->
+          <span>
+            <h1 class="slide1-title2 text-center">Collaboration
+            </h1>
+          </span>
+        </div><!--./ overlay-->
+      </div><!-- ./col-->
+    </div><!-- ./ row -->
+  </section><!-- ./ mobile intro-->
+  <section id="mobile-who">
+    <div class="container-fluid mobile-who-container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="text-center">Who?
+          </h2>
+          <img class="rectangle jason-ceo center-block img-responsive" width="80%" src="/assets/images/employees/portrait-jason.png">
+            <p class="text-center">
+              Jason Cohen is the founder and CEO of Analytical Flavor Systems. Their product, Gastrograph, brings machine learning and artificial intelligence to the world of flavor for the first time ever in the form of quality control software for the beverage industry.
+            </p>
+            <img class="matt-perger center-block img-responsive" src="/assets/images/matt-perger.png">
+            <p class="text-center">
+              Matt Perger is a renowned coffee entrepreneur known for his unconventional methods in brewing coffee and pulling shots. His technique has won him several championships as a barista and brewer.
+              Matt has teamed up with Analytical Flavor Systems to create an incredible new tool that will achieve perfect espresso shots based off of his original espresso recipe.
+            </p>
+          </div><!-- ./ col 12-->
+        </div><!-- ./row-->
+      </div><!-- ./mobile-who-container -->
+    </section><!-- ./who -->
+    <section id="mobile-calculator">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">The First Ever Espresso Calculator
+            </h1>
+            <p class="text-left">
+              OK. You think you're perfect and have it all figured out. You don't need any help because you can feel the weather and the humidity, can count seconds in your head and weigh the grinds by feel, right?<br><br>
+              Wrong - even the amount of time your <i>grinder</i> has been running will affect your flavor profile. <br>
+              Every shot is an individual snowflake, and it is impossible to map it out and replicate it. Each model of espresso machine is built differently and calibrated for specific cafe settings. By pulling metadata from baristas all over the world, along with espresso reviews, we will be able to fingerprint every shot and help you measure and find those factors that allow you to pull the best shot <i>every</i> time.
+            </p>
+            <div class="machine-container">
+              <object class="espresso-machine center-block" data="assets/images/espresso-machine-01.svg" preserveAspectRatio="xMinYMin meet" type="image/svg+xml">
+                Your browser doesn't support SVG
+              </object>
+              <button type="button" class="btn dose-button" data-toggle="modal" data-target="#dose-modal">+</button>
+              <button type="button" class="btn time-button" data-toggle="modal" data-target="#time-modal">+</button>
+              <button type="button" class="btn yield-button" data-toggle="modal" data-target="#yield-modal">+</button>
+            </div>
+          </div><!--./ col-12-->
+        </div><!-- ./ row-->
+      </div>
+  </section><!-- ./ mobile-calculator -->
+  <section id="mobile-yourhelp">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center">We need <i>your</i> help!
+        </h2>
+        <p class="text-center">
+          We are building a calculator that can be used to create a consistently awesome espresso experience at your cafe. In the future, baristas can pull a  shot of espresso, record the flavor profile and paremeters, and recive actionable feedback on how to adjust time, temperature, grind, and dose to optmiize the characteristics that are desired from your single origin or espresso blend. <br><br> We need your help to make this happen - "big data" techniques require data - your data. To build this predictive espresso optimization calculator, we're asking hundreds of baristas like you to pull three shots of espresso in one highly caffeinated session and review that espresso on their smart phone using Gastrograph Review.
+        </p>
+      </div><!--./col 12-->
+    </div><!-- ./row-->
+  </section><!-- ./ mobile-yourhelp-->
+  <section id="mobile-calltoaction">
+    <div class="container-fluid">
+      <div class="bean-overlay">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Changing the Coffee World is Simple...
+            </h2>
+            <img class="slide7-glyph img-responsive" src="assets/images/pricing-freeapps-glyph.png">
+              <p class="slide7-glyphtext text-center">Download the Gastrograph app for free on your Android or iOS device.
+              </p>
+            <img class="slide7-glyph img-responsive" src="assets/images/3shots-glyph.png">
+              <p class="slide7-glyphtext text-center">Redial the espresso machine every ~2 hours, pull three (or more) shots, then review it with the app.
+              </p>
+            <img class="slide7-glyph img-responsive" src="assets/images/pricing-stats-glyph.png">
+              <p class="slide7-glyphtext text-center">Compare your reviews and help build a revolutionary tool for the coffee industry.
+              </p>
+            <h3 class="text-center">Download the app to get started:
+            </h3>
+            <a id="link-footer-play-store" href="https://play.google.com/store/apps/details?id=com.gastrograph.testggapp">
+              <img class="center-block button-play-store" style="float: none; padding-bottom:5%;" alt="Android app on Google Play" src="/assets/images/en_app_rgb_wo_45.png">
+            </a>
+            <a id="link-footer-app-store" class="center-block" href="https://itunes.apple.com/us/app/gastrograph-review/id923512201?mt=8&uo=4" target="itunes_store" style="display: block; overflow: hidden; float: none; padding-bottom: 5%; margin: 2px auto 10px; background: url(/assets/images/Download_on_the_App_Store_Badge_US-UK_135x40.svg) no-repeat; width: 135px;height: 40px;">
+            </a>
+          </div>
+        </div><!-- ./ container-fluid-->
+      </div>
+    </div>
+  </section>
+</div><!-- /.visible-xs-block -->
+<!-- END MOBILE VERSION -->
+
+<div id="wrapper" class="hidden-xs">
+  <!-- <section id="espresso-page">-->
+  <section id="intro" data-speed="6" data-type="background">
+    <div class="row">
+      <div class="col-xs-12">
+        <video id="spro-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" width="100%">
+          <source type="video/mp4" src="assets/images/video/espresso-hero2.mp4">
+          <source type="video/ogv" src="assets/images/video/espresso-hero2.ogv">
+          <source type="video/webm" src="assets/images/video/espresso-hero2.webm">
+          Video not supported
+        </video>
+        <!-- <div id="placeholder--espresso-video"> -->
+          <!-- espresso.js loads espresso-video.html into here -->
+        <!-- </div> -->
+        <div class="overlay container-fluid">
+          <span>
+            <h1 class="slide1-title text-center">A Matt Perger & Analytical Flavor Systems
+            </h1>
+          </span>
+          <div class="container-fluid collab-container">
+            <img id="collab-head" class="collab center-block img-responsive" src="assets/images/collab.svg" type="image/svg+xml" alt="Your browser doesn't support SVGs">
+          </div><!---./collab container-->
+          <span>
+            <h1 class="slide1-title2 text-center">Collaboration
+            </h1>
+          </span>
+        </div><!-- ./ overlay-->
+      </div>
+    </div>
+  </section><!-- ./ intro -->
+  <section id="who" data-speed="4" data-type="background">
+    <div class="container-fluid who-container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="text-center">Who?
+          </h2>
+        </div><!-- ./ col 12-->
+        <div class="col-xs-12 col-md-2">
+          <img class="jason-ceo center-block img-responsive" src="/assets/images/employees/portrait-jason.png">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <p class="text-left">
+            Jason Cohen is the founder and CEO of Analytical Flavor Systems. Their product, Gastrograph, brings machine learning and artificial intelligence to the world of flavor for the first time ever in the form of quality control software for the beverage industry.
+          </p>
+        </div><!-- ./col 3-->
+        <div class="col-xs-12 col-md-4">
+          <p class="text-right">
+            Matt Perger is a renowned coffee entrepreneur known for his unconventional methods in brewing coffee and pulling shots. His technique has won him several championships as a barista and brewer.
+            Matt has teamed up with Analytical Flavor Systems to create an incredible new tool that will achieve perfect espresso shots based off of his original espresso recipe.
+          </p>
+        </div><!-- ./ col 3-->
+        <div class="col-xs-12 col-md-2">
+          <img class="matt-perger center-block img-responsive" src="/assets/images/matt-perger.png">
+        </div><!--col 3-->
+      </div><!-- ./row-->
+    </div>
+  </section><!-- ./ who -->
+  <section id="calculator" data-speed="4" data-type="background">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">The First Ever Espresso Calculator
+          </h2>
+        </div>
+        <div class="col-md-6">
+          <p class="text-left">
+            OK. You think you're perfect and have it all figured out. You don't need any help because you can feel the weather and the humidity, can count seconds in your head and weigh the grinds by feel, right? <br><br>
+            Wrong - even the amount of time your <i>grinder</i> has been running will affect your flavor profile. <br>
+            Every shot is an individual snowflake, and it is impossible to map it out and replicate it. Each model of espresso machine is built differently and calibrated for specific cafe settings. By pulling metadata from baristas all over the world, along with espresso reviews, we will be able to fingerprint every shot and help you measure and find those factors that allow you to pull the best shot <i>every</i> time.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="machine-container">
+            <object class="espresso-machine center-block" id="espressomachine" data="assets/images/espresso-machine-01.svg" preserveAspectRatio="xMinYMin meet" type="image/svg+xml">
+              Your browser doesn't support SVG
+            </object>
+            <button type="button" class="btn dose-button" data-toggle="modal" data-target="#dose-modal">+
+            </button>
+            <button type="button" class="btn time-button" data-toggle="modal" data-target="#time-modal">+
+            </button>
+            <button type="button" class="btn yield-button" data-toggle="modal" data-target="#yield-modal">+
+            </button>
+            <img id="machine-drops" class="machine-drops center-block" src="assets/images/machine-drops.svg" alt="Your browser doesn't support SVG">
+            <div class="machine-dial">
+            </div>
+            <div class="count1">0
+            </div>
+            <div class="count2">0
+            </div>
+          </div>
+        </div><!--./ col-6-->
+      </div><!--./ row-->
+    </div>
+  </section><!-- ./ calculator -->
+  <section id="yourhelp" data-speed="2" data-type="background">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center">We need <i>your</i> help!
+        </h2>
+        <p class="text-center">
+          We are building a calculator that can be used to create a consistently awesome espresso experience at your cafe. In the future, baristas can pull a shot of espresso, record the flavor profile and parameters, and recieve actionable feedback on how to adjust time, temperature, grind, and dose to optimize the characteristics that are desired from your single origin or espresso blend. <br><br> We need your help to make this happen - "big data" techniques require data - your data. To build this predictive espresso optimization calculator, we're asking hundreds of baristas like you to pull <b>three shots of espresso</b> in one highly caffeinated session, and review that espresso on their smart phone using Gastrograph Review.
+        </p>
+      </div><!--./col 12-->
+    </div><!-- ./row-->
+  </section><!-- ./ yourhelp-->
+  <section id="calltoaction" data-speed="2" data-type="background">
+    <div class="container-fluid">
+      <div class="bean-overlay">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Changing the Coffee World is Simple...
+            </h2>
+          </div>
+          <div class="col-md-4">
+            <img class="slide7-glyph img-responsive" src="assets/images/pricing-freeapps-glyph.png">
+            <p class="slide7-glyphtext text-center">
+              Download the Gastrograph app for free on your Android or iOS device.
+            </p>
+          </div><!--col 4 -->
+          <div class="col-md-4">
+            <img class="slide7-glyph img-responsive" src="assets/images/3shots-glyph.png">
+            <p class="slide7-glyphtext text-center">
+              Redial the espresso machine every ~2 hours, pull three (or more) shots, then review it with the app.
+            </p>
+          </div><!--- ./col-->
+          <div class="col-md-4">
+            <img class="slide7-glyph img-responsive" src="assets/images/pricing-stats-glyph.png">
+            <p class="slide7-glyphtext text-center">
+              Compare your reviews and help build a revolutionary tool for the coffee industry.
+            </p>
+          </div><!-- ./col-->
+          <div class="col-xs-12">
+            <h3 class="text-center">
+              Download the app to get started:
+            </h3>
+          </div><!-- ./col 12-->
+          <div class="col-md-6 espresso-footer-badge1">
+            <a id="link-footer-play-store" href="https://play.google.com/store/apps/details?id=com.gastrograph.testggapp">
+              <img class="center-block button-play-store" style="padding-bottom:5%;float: right;" alt="Android app on Google Play"
+              src="/assets/images/en_app_rgb_wo_45.png" />
+            </a>
+          </div><!-- ./ footer badge 1-->
+          <div class="col-md-6 espresso-footer-badge2">
+            <a id="link-footer-app-store" class="center-block" href="https://itunes.apple.com/us/app/gastrograph-review/id923512201?mt=8&uo=4" target="itunes_store" style="float: left; display: block; overflow: hidden; padding-bottom: 5%; margin: 2px auto 10px; background: url(/assets/images/Download_on_the_App_Store_Badge_US-UK_135x40.svg) no-repeat; width: 135px; height: 40px;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><!-- ./ container-fluid-->
+  </section>
+</div><!--- ./wrapper hidden xs -->

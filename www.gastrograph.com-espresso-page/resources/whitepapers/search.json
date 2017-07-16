@@ -1,0 +1,10 @@
+---
+---
+[
+    {% for post in site.posts %}
+        {% if post.categories contains 'data' %}
+            {% include post.json %},
+        {% endif %}
+    {% endfor %}
+    null
+]

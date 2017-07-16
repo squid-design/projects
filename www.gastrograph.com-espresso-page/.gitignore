@@ -1,0 +1,13 @@
+_site
+s3_website.yml
+s3_staging_website.yml
+.*.swp
+/assets/js/frontend.js
+/assets/css/frontend.css
+/assets/js/coffee.js
+node_modules/**
+_config_production.yml
+
+# Sublime Text 2 project files
+*.sublime-project
+*.sublime-workspace

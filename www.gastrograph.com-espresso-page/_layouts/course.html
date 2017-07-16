@@ -1,0 +1,41 @@
+---
+layout: website
+active: learn
+validate: bootstrap
+---
+{% assign author_data = site.data.authors | where:"name", page.author %}
+{% assign author = author_data | first %}
+<div class="container content">
+  <div class="whitepaper">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 center">
+        <h1 id="whitepaper-title">{{ page.title }}</h1>
+        <br>
+        <h4 id="whitepaper-title">{{ page.subtitle }}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-11 center">
+        <div class="row">
+          <div class="col-md-2 center">
+            <h4>Authors</h4>
+            <hr>
+            <h5>{{author.name}}</h5>
+            <em class="author_position">{{author.position}}</em>
+          </div>
+          <div class="col-md-10 whitepaper-text">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include mailchimp_access_courses.html %}
+{% include mixpanel-event--course.html %}
+

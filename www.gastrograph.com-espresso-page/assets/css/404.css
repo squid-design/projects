@@ -1,0 +1,39 @@
+.gastrohog {
+	position:relative;
+	display:block;
+	max-width:300px;
+	height:auto;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.404-container {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.404-header {
+	margin-top:25px;
+	padding:0px;
+	text-align:center;
+	font-size:250%;
+	position:relative;
+}
+
+.404-subheader {
+	margin-top:0px;
+	margin-left:0px;
+	text-align:center;
+	position:relative;
+}
+
+.404-subtext {
+	margin-top: 15px;
+	margin-left:0px;
+	margin-bottom: 100px;
+	text-align:center;
+	position:relative;
+	font-color:gray;
+}
+

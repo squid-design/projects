@@ -1,0 +1,43 @@
+---
+layout: website
+active: resources
+title: Gastrograph whitepapers
+description: The Gastrograph data science whitepapers.
+category: data
+redirect_from:
+- /blogs/data/index.html
+- /learn/whitepapers/index.html
+---
+<style>
+  .footer { display: none; }
+</style>
+
+<div class="container content">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="center courier">Whitepapers</h1>
+      <hr class="whitepaper-green">
+    </div>
+  </div>
+  <div class="whitepaper-index">
+    {% assign count = 0 %}
+    {% for post in site.posts %}
+      {% if post.url contains 'whitepapers/' %}
+        {% cycle         '<div class="row">', '' , '' %}
+        <div class="col-md-4">
+          <a href="{{post.url}}" id="whitepapers-link-{{post.title}}">
+            <div class="whitepaper-index-box">
+              <div class="whitepaper-index-title">
+                <div class="center-text-vertical">
+                  <h4 class="courier whitepaper-card--title">{{post.title}}</h4>
+                  <em class="whitepaper-card--snippet ">{{post.snippet}}</em>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        {% cycle '', '', '</div>' %} <!-- /.row -->
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

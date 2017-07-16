@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand {% if page.active == 'index' %} active {% endif %}" href="/" id="navbar-link-brand-index" >Gastrograph</a>
+    </div><!-- /.navbar-header -->
+    <div class="navbar-header pull-left">
+      <ul class="nav navbar-nav pull-left">
+        <li class="pull-left {% if page.active == 'index' %}active {% endif %}"><a href="/index.html" id="navbar-link-index">Home</a></li>
+        <li class="regular-resources pull-left {% if page.active =='resources' %}active {% endif %}"><a href="/resources/index.html" id="navbar-link-resources">Resources</a></li>
+        <li class="regular-pricing pull-left {% if page.active == 'pricing' %}active {% endif %}"><a href="/pricing.html" id="navbar-link-pricing">Pricing</a></li>
+        <li class="regular-about navbar-collapse-dummy pull-left dropdown {% if page.active == 'about' or page.active == 'jobs' %}active {% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navbar-link-about-dropdown">About <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/about.html" id="navbar-link-about-us">About Us</a></li>
+            <li><a href="/jobs.html" id="navbar-link-jobs">Jobs</a></li>
+          </ul><!-- /.dropdown-menu -->
+        </li><!-- /.dropdown -->
+        <li class="pull-left dropdown {% if page.active == 'blog' %}active {% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navbar-link-blogs-dropdown">Blogs <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/blogs/" id="navbar-link-blogs-index">Home</a></li>
+            <li class="divider"></li>
+            <li><a href="/blogs/gastronexus/" id="navbar-link-gastronexus">GastroNexus</a></li>
+            <li><a href="/blogs/dev/" id="navbar-link-gastronexus">Dev</a></li>
+          </ul>
+        </li><!-- /.dropdown -->
+      </ul>
+    </div><!-- /.navbar-header -->
+
+    <div class="collapse navbar-collapse navbar-right">
+      <ul class="nav navbar-nav pull-right">
+        <li class="navbar-text-white"><a href="mailto:info@gastrograph.com"><i class="fa fa-envelope-o"></i>  info@gastrograph.com</a></li>
+        <li class="navbar-text-white"><a href="tel:1-305-794-8392"><i class="fa fa-phone"></i>   (+1) (305) 794-8392</a></li>
+        <li class="divider-vertical"></li>
+        <hr class="collapse-divider1">
+        <li class="collapse-pricing {% if page.active == 'pricing' %}active {% endif %}"><a href="/pricing.html" id="navbar-link-pricing">Pricing</a></li>
+        <li class="collapse-about dropdown {% if page.active == 'about' or page.active == 'jobs' %}active {% endif %}">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navbar-link-about-dropdown">About <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/about.html" id="navbar-link-about-us">About Us</a></li>
+            <li><a href="/jobs.html" id="navbar-link-jobs">Jobs</a></li>
+          </ul><!-- /.dropdown-menu -->
+        </li><!-- /.dropdown -->
+        <hr class="collapse-divider2 clear-left">
+        <li><a href="https://producerpanel.gastrograph.com" class="btn navbar-btn btn-hollow-success" id="navbar-link-sign-in">Sign In</a></li>
+        <!-- <li><a href="https://signup.gastrograph.com/tasting/new" type="button" id="link-navbar-register" class="btn navbar-btn btn-hollow-success">Sign Up Free</a></li> -->
+      </ul><!-- /.nav /.navbar-nav /.navbar-right -->
+    </div><!-- /.navbar-collapse -->
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div><!-- /.container-fluid -->
+</nav><!-- /.navbar -->

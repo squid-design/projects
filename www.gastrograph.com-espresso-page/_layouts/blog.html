@@ -1,0 +1,23 @@
+---
+active: blog
+---
+<!DOCTYPE html>
+<html>
+  {% assign active = 'blog' %}
+  {% include head.html active=active %}
+
+  <body>
+    {% include header.html %}
+    <div class="content-wrapper">
+      <div class="container" style="min-height: 100%;">
+        {{ content }}
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+  {% include mixpanel-event--blog-post.html %}
+  <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <!-- // <script src="/assets/js/frontend.js"></script> -->
+
+  {% comment %} if statement here for blog {% endcomment %}
+</html>

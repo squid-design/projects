@@ -1,0 +1,582 @@
+.no-js {
+  display: none;
+}
+.espresso-body {
+  overflow-x: hidden;
+  height: 100%;
+  h2 {
+    padding-bottom: 5%;
+  }
+  p {
+    text-align: justify;
+  }
+}
+.modal .modal-dialog {
+  width: 99%;
+  height: 95%;
+  margin: auto;
+  border-radius: 20%;
+  z-index: 9999999;
+  @media (min-width: @screen-xs-min) {
+    height: 100%;
+  }
+}
+.modal-header {
+  padding: 0 !important;
+}
+.modal-content {
+  margin: 5% auto;
+  width: 90%;
+  padding: 5%;
+  overflow-y: hidden;
+  height: 92%;
+  background-color: #1e1e1e;
+  border: dashed 2px white;
+  @media (min-width: @screen-xs-min) {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  h1, h2, h3, h4, p, ul, .close {
+    color: white;
+  }
+  h2 {
+    padding-top: 0;
+  }
+  .close {
+    width: 100%;
+    span {
+    float: right;
+    color: white !important;
+    }
+  }
+  .crema {
+    width: 60%;
+  }
+  .tab-pane {
+    #two {
+    padding-top: 10%;
+    }
+  }
+  .dose-tabs {
+    float: left;
+    padding: none;
+    margin-left: 35%;
+    position: fixed;
+    display: block;
+    bottom: 2%;
+    @media (min-width: @screen-xs-min) {
+      position: relative;
+    }
+    li.active a {
+      background: none !important;
+      border: solid 1px #428BCA;
+    }
+  }
+  .time-graphs {
+    list-style-type: none;
+    position: relative;
+    ul {
+      list-style-type: none;
+      float: left;
+    }
+    li {
+      display: inline-block
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      vertical-align: middle;
+    }
+  }
+  #overlay-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+  }
+
+  #graph1-overlay, #graph2-overlay, #graph3-overlay, #graph4-overlay {
+    position : absolute;
+    top: -40%;
+    left: 30%;
+    width: 95%;
+    height: 100%;
+    z-index: 99999;
+    overflow: hidden;
+    display: none;
+    @media (min-width: @screen-xs-min) {
+      width: 100%;
+      left: 5%;
+    }
+  }
+  .coffee-strength-div {
+    width: 80%;
+  }
+}
+#mobile-intro {
+  background: url("/assets/images/coffee-landing-1.png") fixed;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  margin-bottom: 0;
+  height: 320px;
+  font-size: 1.3rem;
+  position: relative;
+  padding: 7%;
+  .slide1-title, .slide1-title2 {
+    color: #fff;
+    text-align: left;
+  }
+  #spro-video, .collab-container {
+    display: none;
+  }
+}
+#mobile-who {
+  background: url("/assets/images/project_paper.png") 0 fixed;
+  background-size: 20%;
+  background-repeat: repeat;
+  height: 100%;
+  pading: 7%;
+  p {
+    font-size: 1.4em;
+    color: #000;
+  }
+  img {
+    width: 50%;
+    padding: 5%;
+  }
+}
+
+#mobile-calculator {
+  background: url("/assets/images/inflicted.png") 0 fixed;
+  background-size: 20%;
+  background-repeat: repeat;
+  height: 100%;
+  padding: 7%;
+  h1, p {
+    color: #fff;
+  }
+  .machine-container {
+    .espresso-machine {
+      position: relative;
+    }
+    .dose-button {
+      position: absolute;
+      width: 6.4%;
+    margin-top: -25%;
+    left: 20%;
+    z-index: 999;
+    border-radius: 100%;
+    background: orange;
+    border-color: none;
+    }
+    .time-button {
+      position: absolute;
+    margin-top: -10%;
+    left: 45%;
+    width: 6.4%;
+    z-index: 999;
+    border-radius: 100%;
+    background: orange;
+    border-color: none;
+    }
+    .yield-button {
+      position: absolute;
+    margin-top: -25%;
+    width: 6.4%;
+    left: 70%;
+    z-index: 999;
+    border-radius: 100%;
+    background: orange;
+    border-color: none;
+    }
+  }
+}
+#mobile-yourhelp {
+  padding: 7%;
+}
+#mobile-calltoaction {
+    background: url("/assets/images/coffee-beans-highres.jpg") 0 fixed;
+    background-size: 120%;
+    background-origin: middle;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 7%;
+    color: #fff;
+    .bean-overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      margin: 0;
+    }
+    .slide7-glyph {
+    padding: 4%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    verticle-align: middle;
+    }
+    .slide7-glyphtext {
+      color: white;
+      font-size: 1.8rem;
+      margin-left: auto;
+    margin-right: auto;
+      width: 75%;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}
+#intro {
+  @media (min-width: @screen-sm-min)  {
+    background: url("/assets/images/coffee-landing-1.png") fixed;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 0;
+    z-index: 5;
+    position: relative;
+    padding: 10%;
+
+    #video-wrapper {
+      padding: 10%;
+    }
+      .slide1-title, .slide1-title2 {
+        color: #fff;
+        text-align: center;
+      }
+
+      #spro-video, .collab {
+      display: none;
+      }
+    }
+    @media (min-width: @screen-md-min)  {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      position: relative;
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      padding: 0;
+
+      #spro-video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .collab-container {
+        z-index: 2;
+        margin-left:auto;
+        left: 0;
+        right: 0;
+        width: 15%;
+        top: 20%;
+        position: absolute;
+        vertical-align: middle;
+        .collab {
+          width: 100%;
+        }
+      }
+      .slide1-title {
+        display: block;
+        z-index: 2;
+        color: #fff;
+        top: 5%;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .slide1-title2 {
+        top: 45%;
+        color: #fff;
+        z-index: 2;
+        display: block;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+#who {
+  @media (min-width: @screen-sm-min) {
+    .who-container {
+      position: relative;
+      h1, p {
+        font-size: 1.5em;
+        color: #000;
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    background: url("/assets/images/project_paper.png") 50% 0 fixed;
+    z-index: 3;
+    top: 0;
+    height: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 7%;
+    .who-container {
+      margin-top: 0;
+      margin-right: auto;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 5%;
+      p {
+        display: block;
+        font-size: 1.7rem;
+        padding:0;
+        color: #000;
+      }
+      img {
+      margin: 0 auto;
+      width: 200px;
+      display: block;
+      }
+    }
+  }
+}
+#calculator {
+  @media (min-width: @screen-sm-min) {
+    .yield-button {
+      position: absolute;
+      z-index: 99;
+      border-radius: 100%;
+      background: orange;
+      border-color: none;
+      margin-top: -20%;
+      left: 45%;
+      width: 5%;
+      color: white;
+    }
+    .dose-button {
+      position: absolute;
+      z-index: 99;
+      border-radius: 100%;
+      background: orange;
+      border-color: none;
+      margin-top: -40%;
+      left: 45%;
+      width: 5%;
+      color: white;
+    }
+    .time-button {
+      position: absolute;
+      z-index: 99;
+      border-radius: 100%;
+      background: orange;
+      border-color: none;
+      margin-top: -20%;
+      left: 25%;
+      width: 5%;
+      color: white;
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    background: url("/assets/images/inflicted.png") 50% 0 fixed;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 7%;
+    h1, p {
+      color: #fff;
+    }
+    .machine-container {
+      .espresso-machine {
+        margin-top: -5%;
+        width: 80%;
+        background-size: 8%;
+        display: block;
+      }
+      .dose-button {
+        position: absolute;
+        margin-top: 25%;
+        left: 10%;
+        width: 6.4%;
+        z-index: 99;
+        border-color: none;
+        border-radius: 100%;
+        background: orange;
+      }
+      .time-button {
+        position: absolute;
+        margin-top: 10%;
+        width: 6.4%;
+        left: 35%;
+        z-index: 99;
+        border-radius: 100%;
+        background: orange;
+        border-color: none;
+      }
+      .yield-button {
+        position: absolute;
+        margin-top: 40%;
+        left: 35%;
+        width: 6.4%;
+        z-index: 99;
+        border-radius: 100%;
+        background: orange;
+        border-color: none;
+      }
+    }
+    .count1 {
+      color: white;
+      left: 24%;
+      position: absolute;
+      margin-top: 43.5%;
+      font-size: 1em;
+      z-index: 4;
+    }
+    .count1:after {
+      content:'g';
+      position: absolute;
+    }
+    .count2 {
+      color: white;
+      left: 23%;
+      position: absolute;
+      margin-top: 14%;
+      font-size: 1em;
+      z-index: 4;
+    }
+    .count2:after {
+      content: 'sec';
+      position: absolute;
+    }
+    .machine-drops {
+      margin-top: -5%;
+      width: 80%;
+      background-size: 8%;
+      position: absolute;
+      display: block;
+      z-index: 4;
+      animation: move .5s ease-in-out infinite;
+      animation-duration: 3000;
+      animation-play-state: running;
+      @keyframes move {
+        100% {
+          -webkit-transform: ;
+          -moz-transform: translateY(15px);
+          -ms-transform: translateY(15px);
+          -o-transform: translateY(15px);
+          transform: translateY(15px);
+        }
+      }
+    }
+    .machine-dial {
+      margin-top: 22.1%;
+      left: 38.2%;
+      width: 6px;
+      background-size: 8%;
+      position: absolute;
+      display: block;
+      z-index: 4;
+      animation-name: waggle;
+      animation-duration: 2500ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-play-state: running;
+      @keyframes waggle {
+        0%  {transform:rotate(0deg);}
+        10%  {transform:rotate(18deg);}
+        40%  {transform:rotate(-30deg);}
+        60%  {transform:rotate(45deg);}
+        80%  {transform:rotate(-20deg);}
+        100% {transform:rotate(0deg);}
+      }
+    }
+    .machine-dial:after {
+      content: '';
+      display: block;
+      border-color: white transparent;
+      border-style: solid;
+      border-width: 0px 3px 10px 3px;
+      margin-top: -15;
+    }
+    .machine-dial:before {
+      content: '';
+      display: block;
+      border-color: #fff transparent;
+      border-style: solid;
+      border-width: 10px 3px 0px 3px;
+      margin-bottom: -20px;
+    }
+  }
+}
+#yourhelp {
+  @media (min-width: @screen-md-min) {
+    background-color: #3B5998 fixed;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 7%;
+    color: #000;
+  }
+}
+#calltoaction {
+  @media (min-width: @screen-sm-min) {
+    background-size: 130%;
+  }
+  @media (min-width: @screen-md-min) {
+    background: url("/assets/images/coffee-beans-highres.jpg") 50% 0 fixed;
+    background-size: 150%;
+    background-origin: middle;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 7%;
+    color: #fff;
+    .bean-overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      margin: 0;
+    }
+    .slide7-glyph {
+      padding: 4%;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      verticle-align: middle;
+    }
+    .slide7-glyphtext {
+      color: white;
+      font-size: 1.8rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}

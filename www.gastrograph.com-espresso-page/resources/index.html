@@ -1,0 +1,135 @@
+---
+layout: website
+title: Resources for Learning
+active: resources
+description: "Training and educational materials for using the Gastrograph system"
+redirect_from:
+ - /learn/index.html
+---
+<div class="hero hero-resources">
+  <div class="well-hero well-nonindex">
+    <h1 class="text-center">Resources</h1>
+  </div><!-- /.well-hero /.well-nonindex -->
+</div><!-- /.hero /.hero-resources -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <section id="whyusegg1" class="center-block">
+        <br>
+        <p>Gastrograph offers many different services for artisan producers to improve and perfect their individual needs for quality control.<br> Whether you are a producer or a consumer interested in optimizing flavor, we have everything from e-books to video tutorials to share the potential of quality control.<br><br></p>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="blackbar">
+  <div class="learn-wrapper container">
+    <h4 class="super text-center">Courses</h4>
+    <hr class="hr-reduced-width">
+    <div class="row">
+      {% for post in site.posts reversed %}
+        {% assign count = 0 %}
+         {% if post.url contains 'courses/' | first %}
+          {% if count < 3 %}
+            <div class="col-xs-12 col-sm-4 col-md-3 text-center center-vertical">
+              <a href="{{post.url}}">
+                <h5 class="text-center">{{post.short_title}}</h5>
+                <img class="center-block img-responsive text-center" width="50%" src="/assets/images/{{post.short_title | downcase | truncatewords: 2, '' | replace: ' ','-'}}-qc-emailcourse.png">
+                <p class="text-center">{{post.subtitle}}</p>
+              </a>
+            </div>
+            {% assign count = count |plus: 1 %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="learn-wrapper container">
+    <h4 class="super text-center">Tutorials &amp; Knowledge Base</h4>
+    <hr class="hr-reduced-width">
+    <div class="row video-tutorials">
+      <div class="col-xs-12 col-sm-4 col-md-3 text-center center-vertical">
+        <a href="/how-it-works.html">
+          <h5 class="text-center">Science of <br>the Gastrograph</h5>
+          <img class="image-center img-responsive" width="50%" src="/assets/images/science-page-flavorprofile.png">
+        </a>
+      </div>
+      {% for post in site.posts %}
+        {% if post.url contains 'tutorials/' | first %}
+          <div class="col-xs-12 col-sm-4 col-md-3 center-vertical text-center extra-margin-top">
+            <a href="{{post.url}}">
+              <h5 class="text-center">{{post.title}}<br>{{post.subtitle}}</h5>
+              <img class="img-responsive center-block text-center" width="50%" src="/assets/images/ggpp_{{post.subtitle | downcase | replace: " ", "-"}}.png" alt="{{post.title}}-{{post.subtitle}}">
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      <div class="col-xs-12 col-sm-4 col-md-3 text-center center-vertical">
+        <a href="/resources/how-to-review.html">
+          <h5 class="text-center">Learn How <br> to Review</h5>
+          <img class="image-center img-responsive" width="50%" src="/assets/images/howtoreview-glyph.png">
+        </a>
+      </div>
+    </div><!-- /.row /.video-tutorials -->
+  </div><!-- /.learn-wrapper -->
+
+  <div class="hidden-xs learn-wrapper container">
+    <h4 class="super text-center">Case Studies</h4>
+    <hr class="hr-reduced-width">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3 center-block text-center extra-margin-top extra-margin-bottom">
+        <a href="/resources/case-studies/importance-of-consumer-loyalty-in-craft-beer.html">
+          <h5 class="text-center">The Importance of Consumer Loyalty in Craft Beer</h5>
+          <img class="text-center img-responsive center-block" src="/assets/images/case-studies/beer-dude.png">
+          <p class="text-center">Why should a consumer<br> continue to choose <br>your beer?</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3 center-block text-center extra-margin-top extra-margin-bottom">
+        <a href="/resources/case-studies/detecting-batch-to-batch-variation-and-quality-decline-in-craft-beer.html">
+          <h5 class="text-center">Detecting Batch-to-Batch Variation and Quality Decline</h5>
+          <img class="text-center img-responsive center-block" src="/assets/images/case-studies/qc-lady.png">
+          <p class="text-center">How Gastrograph helped a craft brewery guarantee quality in a declining product.</p>
+        </a>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.learn-wrapper -->
+
+  <div class="learn-wrapper container">
+    <h4 class="super text-center">Technical White Papers</h4>
+    <hr class="hr-reduced-width">
+    <div class="row">
+      {% for post in site.posts %}
+        {% if post.url contains 'whitepapers/' | first %}
+          <div class="col-xs-12 col-sm-4 col-md-3 center-block text-center extra-margin-top extra-margin-bottom">
+            <a href="{{post.url}}">
+              <h5 class="text-center">{{post.short_title}}</h5>
+              <img class="text-center img-responsive center-block" src="/assets/images/resources-{{post.subtitle | downcase | truncatewords: 2, '' | replace: ' ','-'}}.png">
+              <p class="text-center">{{post.short_description}}</p>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div><!-- /.row -->
+  </div><!-- /.learn-wrapper -->
+
+  <div class="learn-wrapper container">
+    <h4 class="super text-center">Conference Posters</h4>
+    <hr class="hr-reduced-width">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3 center-block text-center extra-margin-top extra-margin-bottom">
+        <a href="/assets/images/conference-posters/mbaa/flaw-detection-and-identification.jpg">
+          <h5 class="text-center">Flaw Detection and Identification through Data Science and Machine Learning</h5>
+          <img class="text-center img-responsive center-block" src="/assets/images/conference-posters/mbaa/flaw-detection-and-identification.jpg">
+          <p class="text-center">A novel approach to detecting and identifying common flaws in beer using human sensory data</p>
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3 center-block text-center extra-margin-top extra-margin-bottom">
+        <a href="/assets/images/conference-posters/mbaa/applications-in-machine-learning-and-artificial-intelligence-on-human-sensory-data.jpg">
+          <h5 class="text-center">Applying Human Sensory Data to Beer Flaw Origin Identification and prediction</h5>
+          <img class="text-center img-responsive center-block" src="/assets/images/conference-posters/mbaa/applications-in-machine-learning-and-artificial-intelligence-on-human-sensory-data.jpg">
+          <p class="text-center">Identifying and predicting the causes of beer flaws through bio-chemical pathway tracing</p>
+        </a>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.learn-wrapper /.container -->
+</div>

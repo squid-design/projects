@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Meet Rick Sayland"
+date:   2015-05-28 16:06:00
+tags: employee about customer success representative
+author:
+  - Rick Sayland
+description: Interview with Gastrograph's Customer Success Representative Rick Sayland.
+---
+**What type of work do you do for Gastrograph?**
+
+With a background in physics I'm pretty versatile and like to lend a hand wherever I can. Primarily though, I work to find new clients and get them excited to use the Gastrograph system. I'm particularly good at breaking down complex ideas into simple terms and getting the main points across. This is important because we want to offer the best quality control possible, and understanding why Gastrograph is a solution is half the battle.
+
+**What sparked your interest in working in that field?**
+
+I was always fascinated about the world around me and how mother nature accomplishes the amazing things she does. Unfortunately, modern physics is quite math intensive and that limits many people from understanding the details of the way nature operates. However, I was inspired by those who make physics, chemistry, and science in general available to everyone. Bill Nye got me fascinated at a young age, and in college I became intrigued with the late physicist Richard Feynman who was always able to communicate complex ideas in simple ways that both get the message across and expand the imagination.
+
+<!--more-->
+
+**Why did you choose AFS?**
+
+Recently graduating from Penn State, I was just about to leave State College aka Happy Valley. I read a headline about a local startup doing quality control for beer and coffee using data science and artificial intelligence and was instantly intrigued. When I stopped by the AFS Hacker House, I was instantly engrossed with the startup culture and took the dive into the uncertain yet personally rewarding world of being part of a startup company.
+
+**Gastrograph has a pretty unique environment. What would you say your favorite part is?**
+
+Not being a corporate drone. I really enjoy the fact that everyone here is part of a close-knit team and takes interest in each other's work. The daily tasting panels of beer and coffee are also a big plus. I recently discovered craft beer and, thanks to Gastrograph, I'm learning how to hone in on my tastes. IPAs aren't just a bitter nightmare to me anymore and I'm beginning to see much more in beer than I originally had.
+
+**You get to evaluate many different drinks. What product is your favorite to taste test?**
+
+For now, coffee is my favorite.
+
+**Why is that?**
+
+Like many Americans I'm hopelessly addicted to caffeine and coffee is how I start my day. Going from store-bought pre-ground coffee to freshly ground coffee from different parts of the world has been and continues to be a great experience.
+
+**Working at a startup can be time consuming. What activities do you do in your free time to alleviate the stress?**
+
+I enjoy the outdoors and have just started to explore some of the bigger trails in Pennsylvania. I also get along with my new coworkers, and in this unique field having a few beers after work becomes even more enjoyable with my newly found sense of taste.
+
+**If you were a character from Star Wars, which one would you be?**
+
+Yoda, because of his wisdom and Buddha-like nature.
+
+**What would you choose as your last meal?**
+
+Steak dinners have often been used as a means of celebrating big events - a big sale, graduation, a new job etc. I think that would be appropriate for my last meal on earth. With a nice big side of garlic mashed potatoes and butter.
+
+**Who would win a battle between a ninja and a pirate?**
+
+More often than not, I would say the ninja. You can't fight very well with a belly full of rum, not to mention the lethargy that often comes with scurvy.

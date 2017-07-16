@@ -1,0 +1,40 @@
+{% include blog_page_header.html %}
+{% comment %}
+BELOW IS THE POST LAYOUT
+if You change part of this, go and change it in _layouts/post.html
+{% endcomment %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      {% for post in paginator.posts %}
+        <div class="post">
+          <div class="row">
+            <div class="col-md-2">
+              {% include blog_author_picture.html post=post %}
+            </div>
+            <div class="col-md-10">
+              <div class="row">
+                <div class="col-md-12">
+                  <h5>
+                    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}: </span>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-offset-1 col-md-11">
+                  <br>
+                  {{post.excerpt | markdownify}}
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><strong>Read more</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{{ paginator | pager_links }}
+{% include search_box.html %}

@@ -1,0 +1,61 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bundled stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/animations.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/frontend.css">
+
+  <!-- fonts -->
+  <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed|EB+Garamond|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <!-- delivered stylesheets -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+  {% if page.active == 'pricing' %}
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+  {% endif %}
+
+
+  <!-- canonical url -->
+  <link rel="canonical" href="{{site.url}}{{page.url | replace:'index.html',''}}"/>
+
+  <!-- shortcut icon -->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+  {% if page.validate == 'bootstrap' %}
+    <link rel="stylesheet" href="/assets/css/bootstrapValidator.min.css">
+  {% endif %}
+
+  <!-- Page Description -->
+  {% if page.description %}<meta name="description" content="{{ page.description }}"> {% endif %}
+
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+  <script type="text/javascript" src="/assets/js/frontend.js" defer></script>
+  {% if site.production %}
+    <script type="text/javascript" src="/assets/js/hotjar.js"></script>
+    <script type="text/javascript" src="/assets/js/ga.js"></script>
+    <script type="text/javascript" src="/assets/js/mixpanel.js"></script>
+  {% endif %}
+
+  {% comment %} Set background for blog pages. {% endcomment %}
+  {% if active == 'blog' %}
+    <style>
+  body{
+    background:
+    url("/assets/images/bg.png") no-repeat,
+    url("/assets/images/noisy_grid.png");
+  }
+  </style>
+    {% endif %}
+    <!-- SEQUENCE -->
+
+  {% comment %} Keep here as it loads the mathjax fast {% endcomment %}
+  {% if page.url contains 'whitepapers' %}
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=onload"></script>
+  {% endif %}
+</head>

@@ -1,0 +1,272 @@
+- name: John Dori
+  email: JohnDev@gastrograph.com
+  short_name: john
+  github: jdori
+  bio: John is a geek for good flavor. When he's not working to empower the taste buds of the fine folks that make his favorite products, you will find him trying new foods and beverages. He is a member of The Tea Institute at Penn State but drinks far more coffee these days. Outside of work, he enjoys reading science fiction and learning about different styles of music. He graduated from Penn State with a degree in Information Sciences & Technology.
+  twitter: jdori_
+  position: Co-founder & Lead Front-end Engineer
+  team: dev
+  active: true
+  stack_exchange: none
+
+- name: Evan Farrell
+  email: EvanDev@gastrograph.com
+  short_name: evan
+  github: moosilauke18
+  bio: Evan studied Information Sciences and Technology at Penn State, and continues to learn everything he can about technology. Before joining AFS, Evan started learning everything to do with beer and beer production while homebrewing. When not coding, you will find him climbing 14ers, hiking, and doing anything else in the outdoors.
+  twitter: efarrell18
+  position: Lead Engineer
+  team: dev
+  active: true
+  stack_exchange: 2322343
+
+- name: Jason Cohen
+  email: JasonCEO@gastrograph.com
+  short_name: jason
+  github: JasonCEC
+  bio: Before starting Analytical Flavor Systems, Jason was the Founder and Executive Director of The Tea Institute at Penn State, which oversees 20+ researchers in 5 fields of study in traditional Chinese, Japanese, and Korean Tea. Jason did his research in Sensory Science and Data Mining, eventually developing the Gastrograph system after 3 1/2 years of research. Jason is a professional coffee, tea, and beer taster, and when he is not trying new products, he enjoys rock climbing, ice climbing, and fencing.
+  twitter: none
+  position: Founder & Chief Executive Officer
+  team: founder
+  active: true
+  stack_exchange: 3241695
+
+- name: Emily Van Clief
+  email: EmilyDesign@gastrograph.com
+  short_name: emily
+  github: none
+  bio: Emily graduated with a degree in Art with a concentration in New Media at Penn State University. When she isn’t designing for Gastrograph, Emily enjoys the pursuit of artisan beverages. Everything from slinging ‘spro to making tea ware has caused her agility and swiftness to carry over into her artwork. Oh, and she can be found playing with exotic animals from time to time. She isn’t called S.uper Q.uick U.ser I.nterface D.esigner for nothing.
+  twitter: emilyaislynn
+  position: Founding Team Member & Designer
+  team: design
+  active: true
+  stack_exchange: none
+
+- name: Zachary Bushman
+  email: ZachChem@gastrograph.com
+  short_name: zach
+  github: none
+  bio: Zachary is the chemical engineer at Analytical Flavor Systems.  He graduated with a degree in chemistry from the University of Wisconsin - Platteville.  His upbringing in Wisconsin taught him to love good beers and cheeses. He likes puzzles and solving problems.  In his free time Zach likes to go fishing and play rugby.
+  twitter: none
+  position: Chemical Engineer
+  team: chemistry
+  active: true
+  stack_exchange: none
+
+- name: Ryan Ahn
+  email: RyanChem@gastrograph.com
+  short_name: ryan
+  github: none
+  bio: Ryan is a chemist for AFS.  He is also the current executive director of the Tea Institute at Penn State, where he studies Chinese, Japanese, and Korean tea ceremony. He is also the Founder and President of the Penn State Coffee Club. In his free time, Ryan enjoys spending time in the Penn State Teahouse, watching House of Cards, and being a foodie.
+  twitter: none
+  position: Chemist
+  team: chemistry
+  active: true
+  stack_exchange: none
+
+- name: Yuan-Hsin Chen
+  email: YuanData@gastrograph.com
+  short_name: yuan-hsin
+  github: yuanhsinchen
+  bio: Yuan-Hsin received her master's degree of Information Sciences and Technology from Penn State concentrated on information retrieval and data mining as well as another master's degree of Electrical and Control Engineering from National Chiao Tung University in Taiwan. She is passionate about good flavor for food and leaning new software technology. While not coding or doing research, she enjoys cooking Taiwanese cuisine for her family and friends, doing outdoor activities, and traveling.
+  twitter: none
+  position: Data Scientist
+  team: data
+  active: true
+  stack_exchange: none
+
+- name: Benson Chong
+  email: BensonChem@gastrograph.com
+  short_name: benson
+  github: none
+  bio: Benson graduated from Penn State University in Biochemistry & Molecular Biology. He is a cold brew enthusiast who likes to experiment with various concoctions of coffee and spices. In his spare time he co-runs a tape label called Raw Broccoli. On quiet days he likes to read Kafka and eat honeydew.
+  twitter: none
+  position: Biochemical Engineer
+  team: chemistry
+  active: true
+  stack_exchange: none
+
+- name: Bill Kiatipis
+  email: bill.kiatipis@gastrograph.com
+  short_name: bill
+  github: none
+  bio: Bill Kiatipis is a multifaceted executive with over thirty years of helping companies achieve sales success.  He brings a passion, dynamism and contagious competitive spirit to his engagements. His strength is in his ability to quickly learn new technologies and navigate complex environments. He is an expert in building and maintaining relationships from operational through to C-level and has demonstrated laser focus on driving and maximizing potential revenue within new and existing customers.<br>Bill has held senior positions in the technology field with Fusion-io, Mellanox, Canada, CGI, Gartner Canada and 3Com.<br><br>Bill is the best mix of old and new school on the Gastrograph team and still uses BBM.
+  twitter: none
+  position: Vice President Sales
+  team: sales
+  active: true
+  stack_exchange: none
+
+
+# ----------------------
+# INACTIVE EMPLOYEES
+# ----------------------
+- name: Ioana Ferariu
+  email: IoanaUX@gastrograph.com
+  short_name: ioana
+  github: none
+  bio: Ioana graduated from Princeton University with a degree in Cognitive Science, and minors in Neuroscience, Linguistics and European Culture Studies. Somehow, all of that fused into an interest in flavor research. Part of the Data Team at AFS, Ioana also explores the influences that memory and contextual stimuli can have in taste perception. She can be found spending her free time debating feminist topics, reading about architecture and design, or keeping up to date with her favorite TV shows.
+  twitter: none
+  position: Data Scientist + UX Engineer
+  team: data
+  active: false
+  stack_exchange: none
+
+- name: Diana Zhang
+  short_name: diana
+  github: none
+  bio: Diana studies Computational Statistics at Penn State but she gets most of her knowledge on data science through self-learning outside class. She would like to pursue the endless possibilities of life and always enjoy talking to the amazing people she met in the past 22 years. When not working/learning at Hacker House, she is most likely reading Neo-Confucianism philosophy with a cup of tea, or watching South Park with a piece of cheese cake.
+  twitter: none
+  position: Data Scientist Intern
+  team: data
+  active: false
+  stack_exchange: none
+
+- name: Steve Wang
+  email: StevenP@gastrograph.com
+  short_name: steve
+  github: none
+  bio: Steve is an individual who loves exploring new things and channeling his creativity into whatever he pursues. He was born in Finland, raised in inner-city Toronto, grew up in Pennsylvania and has explored multiple avenues of life along the way. He has always been trying different things, from DJing, competitive MOBA games, dancing, entrepreneurship, and now bringing style to a dull sales world.  "Ain't no question if I want it, I need it."  Studies Economics at Penn State.
+  twitter: none
+  position: Customer Success Representative
+  team: sales
+  active: false
+  stack_exchange: none
+
+- name: Yuqi Zhou
+  email: yxz183@gastrograph.com
+  short_name: yuqi
+  github: none
+  bio: Yuqi Zhou is a data scientist at Analytical Flavor Systems. She studies Electrical Engineering at Penn State University. When she is not busy with her studies at school and working at AFS, she is fond of hanging out with her friends. She enjoys travelling with her friends on vacation and playing role-playing board games with her friends on the weekend.
+  twitter: none
+  position: Data Scientist
+  team: data
+  active: false
+  stack_exchange: none
+
+- name: Yuan Tang
+  email: TerryTangYuan@gastrograph.com
+  short_name: terry
+  github: terrytangyuan
+  bio: Yuan graduated from Penn State University in Computational Mathematics with honors. He is always self-motivated and eager to learn new things. When he is not developing and implementing data mining algorithms for Analytical Flavor Systems, he enjoys the fine arts of sketching and Chinese calligraphy, enjoys barbecue and karaoke, and plays a mean game of badminton against anyone who dares to challenge him.
+  twitter: none
+  position: Data Scientist
+  team: data
+  active: false
+  stack_exchange: none
+
+- name: Eric Wu
+  short_name: eric
+  github: none
+  bio: Eric is an intern on the iOS app development team. He is a rising sophomore at Princeton University studying Operations Research and Financial Engineering, a major whose name Eric likes to think is as complex and esoteric as he is.  In his spare time, he can be found absorbing free knowledge from other universities online, and singing with his a cappella group <a href="http://www.nassoons.com/">The Princeton Nassoons</a>.
+  twitter: none
+  position: iOS Intern
+  team: dev
+  active: false
+  stack_exchange: none
+
+- name: Will Rose
+  short_name: will
+  github: none
+  bio: Will is an engineering intern at AFS, working on backend data processing. He is currently studying math at Princeton and has a passion for coffee. During the school year, he can be found every morning waking his roommates up with his coffee grinder. Aside from coffee and coding, Will is an avid biker, both on the Princeton cycling team, and, during the summer, as a part of his own team training for the Pan Massachusetts Challenge, a two day, 200 mile bike ride across Massachusetts.
+  twitter: none
+  position: Engineering Intern
+  team: dev
+  active: false
+  stack_exchange: none
+
+- name: Dan Chen
+  short_name: dan
+  github: none
+  bio: Dan is currently a sales intern at AFS. Formerly a chem major at Princeton University, Dan switched over to economics after discovering the joy of consuming all of the wonderful beverages in the world. Dan is passionate about beverages and has never refused to try a new drink. In his free time, Dan pursues his dream of throwing the greatest house party of all time, and writes SAT strategy books.
+  twitter: none
+  position: Customer Success Representative
+  team: sales
+  active: false
+  stack_exchange: none
+
+- name: Bokang Huang
+  email: BKDev@gastrograph.com
+  short_name: bk
+  github: none
+  bio: Bokang (a.k.a BK) is a mobile app developer who focuses on iOS development of Gastrograph in AFS. He graduated with a degree in Information Sciences and Technology from Penn State University. When he isn’t trying to tackle tough problems with the help of StackOverflow, he spends most of his time playing FIFA, basketball and supporting San Antonio Spurs.
+  twitter: none
+  position: Lead iOS Developer
+  team: dev
+  active: false
+  stack_exchange: none
+
+- name: Rick Sayland
+  email: RickS@gastrograph.com
+  short_name: rick
+  github: none
+  bio: Rick graduated with his degree in physics at the Pennsylvania State University, where he learned to break highly technical problems down into layman's terms. He's passionate about problem solving and the communication of ideas. He also enjoys foreign languages and has studied both Spanish and Japanese.
+  twitter: none
+  position: Customer Success Representative
+  team: sales
+  active: false
+  stack_exchange: none
+
+- name: Nabeel Sarwar
+  short_name: nabeel
+  github: none
+  bio: Nabeel is a physics student at Princeton University. He is an intern on the data science team. At work, he is a cold, silent type that methodically builds models, but during his free time he dives into watching horror and zombie films, reading and writing poetry, reading comics, and rocking out to the heaviest metal he can find.
+  twitter: none
+  position: Data Science Intern
+  team: intern
+  active: false
+  stack_exchange: none
+
+- name: Mitch Clarke
+  email: MitchDev@gastrograph.com
+  short_name: mitch
+  github: MitchellClarke
+  bio: Mitch is the third code pig of Analytical Flavor Systems. He has studied Computer Science at Penn State University and is now a full stack developer for Android. When he isn't working with the latest APIs he enjoys game development, listening to thrash metal and trying new foods.
+  twitter: none
+  position: Software Engineer
+  team: dev
+  active: false
+  stack_exchange: none
+
+- name: Ted Papaioannou
+  email: TedDev@gastrograph.com
+  short_name: ted
+  github: TeePaps
+  bio: Ted first joined AFS 6 months after starting to code. Before he switched to computer engineering, he studied architectural engineering, which carried over well to his position constructing the back-end for AFS. Not a day goes by that he's not programming and learning. When he's not working you'll find him reading - mainly philosophy and about eastern religions, training in jiu-jitsu, or spending time with his loved ones. Otherwise, you'll catch him in a dark room with vim and his Model M keyboard.
+  twitter: none
+  position: Co-founder & Full Stack Software Engineer
+  team: dev
+  active: false
+  stack_exchange: none
+
+- name: Arturo Leon
+  email: ArturoData@gastrograph.com
+  short_name: arturo
+  github: none
+  bio: Studied math at Florida International University. When not reading a math or physics textbook, I spend my time playing basketball, soccer and videogames.
+  twitter: none
+  position: Data Scientist
+  team: data
+  active: false
+  stack_exchange: none
+
+- name: Noah Halpert
+  email: nhalpert@gastrograph.com
+  short_name: noah
+  github: none
+  bio: Noah is the head of sales here at Analytical Flavor Systems. Prior to joining, he spent three years working in Project Management for United Therapeutics Corporation. Having an entrepreneurial mindset, he could not pass up the opportunity to bring his dedication, passion, and positivity to the AFS table.  Outside of the office, Noah enjoys watching sports, experimenting in the kitchen, yoga, boating, and a good hike.
+  twitter: none
+  position: Head of Sales
+  team: sales
+  active: false
+  stack_exchange: none
+
+- name: Sidharth Dhawan
+  short_name: sid
+  github: none
+  bio: Sidharth is a web design/data science intern at Analytical Flavor Systems. He studies computer science and math at Princeton University. When he isn't busy with his duties as a student and intern, he enjoys making artwork, swimming, and curling up with a good book.
+  twitter: none
+  position: Data-Science Intern
+  team: intern
+  active: false
+  stack_exchange: none
